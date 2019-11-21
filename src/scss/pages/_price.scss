@@ -2,12 +2,14 @@
 ------------------------------ */
 .price__list {
     margin: 30px 15px;
+    font-family: $gosic;
 }
 
 .price__list > h1 {
     text-align: center;
     font-size: 1.5rem;
-    color: #806474;
+    color: #47a9c2;
+    margin-bottom: 15px;
 }
 
 .img-title {
@@ -27,8 +29,7 @@
 }
 
 .price-list caption,
-.price-list th,
-.price-list [colspan] {
+.price-list th {
     padding: .5em;
     color: #fff;
     background: #000;
@@ -36,16 +37,22 @@
 
 .price-list caption {
     font-size: 1.0rem;
-    background: #000;
+    background: #333;
 }
 
 .price-list th {
-    background: #806474;
+    background: #47a9c2;
+
+    &:nth-of-type(2) {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #47a9c2;
+    }
 }
 
 .price-list th,
 .price-list td {
-    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 50%;
 }
 
 .price-list td {
@@ -53,12 +60,17 @@
     padding: .5em;
     text-align: center;
     vertical-align: middle;
+    border: 1px solid #666;
 }
 
 .price-list span {
     display: block;
     line-height: 1.2;
     font-size: 1.0rem;
+}
+
+.price-list span.font-sm {
+    font-size: .8rem;
 }
 
 @media (min-width: 768px) {

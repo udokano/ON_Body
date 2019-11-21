@@ -1783,12 +1783,14 @@ ABOUT SECTION SURPRISE
 /* price__list
 ------------------------------ */
 .price__list {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   margin: 30px 15px;
 }
 
 .price__list > h1 {
-  color: #806474;
+  color: #47a9c2;
   font-size: 1.5rem;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -1809,28 +1811,35 @@ ABOUT SECTION SURPRISE
 }
 
 .price-list caption,
-.price-list th,
-.price-list [colspan] {
+.price-list th {
   background: #000;
   color: #fff;
   padding: .5em;
 }
 
 .price-list caption {
-  background: #000;
+  background: #333;
   font-size: 1.0rem;
 }
 
 .price-list th {
-  background: #806474;
+  background: #47a9c2;
+}
+
+.price-list th:nth-of-type(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #47a9c2;
 }
 
 .price-list th,
 .price-list td {
-  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .price-list td {
+  border: 1px solid #666;
   padding: .5em;
   text-align: center;
   vertical-align: middle;
@@ -1841,6 +1850,10 @@ ABOUT SECTION SURPRISE
   display: block;
   font-size: 1.0rem;
   line-height: 1.2;
+}
+
+.price-list span.font-sm {
+  font-size: .8rem;
 }
 
 @media (min-width: 768px) {
@@ -1930,7 +1943,7 @@ light tome: #919191;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
-  margin: 26px auto;
+  margin: 45px auto;
   padding: 0 15px;
 }
 
@@ -1984,6 +1997,7 @@ light tome: #919191;
 .qa__question {
   font-size: 1.4rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 1.8rem;
   padding-bottom: 7px;
   position: relative;
@@ -2001,7 +2015,7 @@ light tome: #919191;
   font-size: 60px;
   left: 0;
   position: absolute;
-  top: -55px;
+  top: -42px;
 }
 
 .qa__answer {
@@ -2036,6 +2050,9 @@ light tome: #919191;
   }
   .qa__answer {
     font-size: .9rem;
+  }
+  .qa__question > span.num {
+    top: -55px;
   }
 }
 

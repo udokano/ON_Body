@@ -7,7 +7,7 @@ light tome: #919191;
 /*よくある質問ページ
 ------------------------------ */
 .qa {
-    margin: 26px auto;
+    margin: 45px auto;
     padding: 0 15px;
     box-sizing: border-box;
     font-family: $gosic;
@@ -66,6 +66,7 @@ light tome: #919191;
 .qa__question {
     position: relative;
     line-height: 1.8rem;
+    letter-spacing: 0.1em;
     font-size: 1.4rem;
     font-weight: 600;
     padding-bottom: 7px;
@@ -80,7 +81,7 @@ light tome: #919191;
 
 .qa__question > span.num {
     position: absolute;
-    top: -55px;
+    top: -42px;
     left: 0;
     font-size: 60px;
     font-family: 'Open Sans Condensed', sans-serif; //web FONT
@@ -120,5 +121,9 @@ light tome: #919191;
 
     .qa__answer {
         font-size: .9rem;
+    }
+
+    .qa__question > span.num {
+        top: -55px;
     }
 }

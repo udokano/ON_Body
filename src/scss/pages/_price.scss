@@ -16,11 +16,19 @@
     width: 82px;
 }
 
-.img-img {
+.price_thumb {
     display: block;
     width: 80px;
     height: auto;
     margin: auto;
+}
+
+.price_thumb.thumb01 {
+    width: 240px;
+}
+
+.price_thumb.thumb02 {
+    width: 160px;
 }
 
 .price-list {

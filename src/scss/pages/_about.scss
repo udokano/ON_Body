@@ -1,0 +1,308 @@
+.introduction {
+    padding: 37px 0;
+
+    p {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+    }
+}
+
+/*=
+ABOUT ANCHOR AREA
+==================================*/
+
+.about__anchor {
+    background-color: #e5e5e5;
+    padding: 55px 0;
+
+    .about__anchor-links {
+        background-image: url(../img/about/anchor_area_bg.jpg);
+
+        .anchor-link {
+            height: 165px;
+            width: 50%;
+            box-sizing: border-box;
+            position: relative;
+
+            a {
+                display: block;
+                font-family: $gosic;
+                z-index: 100;
+                position: relative;
+
+                p {
+                    color: #fff;
+                    font-size: 1.05rem;
+                    letter-spacing: 0.1em;
+                    line-height: 1.4;
+                    padding-left: 40px;
+                    padding-top: 77px;
+                }
+            }
+        }
+
+        .anchor-link.link02 {
+            margin-left: 50%;
+
+            a {
+                text-align: right;
+
+                p {
+                    padding-right: 38px;
+                }
+            }
+        }
+
+        .anchor-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: no-repeat 100% 50%/cover;
+            mix-blend-mode: multiply;
+        }
+
+        .anchor-link.link01::after {
+            background-image: url(../img/about/anchor_bg01.png);
+        }
+
+        .anchor-link.link02::after {
+            background-image: url(../img/about/anchor_bg02.png);
+        }
+
+        .anchor-link.link03::after {
+            background-image: url(../img/about/anchor_bg03.png);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about__anchor {
+        padding: 55px 0;
+
+        .about__anchor-links {
+            .anchor-link {
+                height: 135px;
+                width: 50%;
+
+                a {
+                    p {
+                        padding-left: 5%;
+                        padding-top: 28%;
+                    }
+                }
+            }
+
+            .anchor-link.link02 {
+                margin-left: 50%;
+
+                a {
+                    p {
+                        padding-right: 0;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .anchor-link::after {
+                background-position: 0% 50%;
+                background-size: auto 100%;
+            }
+
+            .anchor-link.link01::after {
+                background-image: url(../img/about/anchor_bg01_sp.png);
+            }
+
+            .anchor-link.link02::after {
+                background-image: url(../img/about/anchor_bg02_sp.png);
+            }
+
+            .anchor-link.link03::after {
+                background-image: url(../img/about/anchor_bg03_sp.png);
+            }
+        }
+    }
+}
+
+/*=
+ABOUT SECTION 共通デザイン
+==================================*/
+
+.about-sec {
+    font-family: $gosic;
+
+    .contents {
+        padding: 80px 0;
+        letter-spacing: 0.1em;
+
+        .about_contents-box {
+            width: 72%;
+
+            h2 {
+                font-weight: 600;
+                margin-bottom: 16px;
+                font-size: 3.7rem;
+                text-align: left;
+            }
+
+            .cach {
+                font-size: 2.0rem;
+                margin-bottom: 22px;
+                color: #000;
+                line-height: 1.4;
+            }
+
+            p {
+                line-height: 1.9;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about-sec {
+        .contents {
+            padding: 80px 0;
+            flex-flow: column;
+
+            .about_contents-box {
+                width: 100%;
+
+                h2 {
+                    margin-bottom: 16px;
+                }
+
+                .cach {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+    }
+}
+
+/*=
+ABOUT SECTION CONCEPUT
+==================================*/
+
+.about-sec.conceput {
+    background-image: url(../img/about/concept_bg.jpg);
+
+    .contents {
+        .about_contents-box {
+            .btn-area {
+                margin-top: 30px;
+
+                li {
+                    width: 24%;
+                    margin-right: 2rem;
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    .btn {
+                        height: 49px;
+                        line-height: 49px;
+                        border-radius: 25.49px;
+                    }
+                }
+            }
+        }
+
+        .thumb {
+            width: 16.4%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about-sec.conceput {
+        .contents {
+            .about_contents-box {
+                margin-bottom: 40px;
+
+                .btn-area {
+                    margin-top: 30px;
+
+                    li {
+                        width: 33%;
+                        margin-right: 1.1rem;
+
+                        .btn {
+                            height: 41px;
+                            line-height: 41px;
+                            border-radius: 22px;
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            }
+
+            .thumb {
+                width: 36%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/*=
+ABOUT SECTION ACCESS
+==================================*/
+
+.about-sec.access {
+    background-image: url(../img/about/access_bg.jpg);
+
+    .contents {
+        padding: 55px 0;
+
+        .about_contents-box {
+            color: #fff;
+            width: 62%;
+
+            .cach {
+                color: #fff;
+            }
+        }
+
+        .btn-cont {
+            width: 20%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about-sec.access {
+        .contents {
+            padding: 55px 0;
+            flex-flow: column;
+
+            .about_contents-box {
+                width: 100%;
+                margin-bottom: 45px;
+            }
+
+            .btn-cont {
+                width: 200px;
+            }
+        }
+    }
+}
+
+/*=
+ABOUT SECTION SURPRISE
+==================================*/
+
+.about-sec.surprise {
+    background-color: #f5f5f5;
+
+    .contents {
+        .about_contents-box {
+            .cach {}
+        }
+    }
+}

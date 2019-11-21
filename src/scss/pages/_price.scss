@@ -1,0 +1,140 @@
+/* price__list
+------------------------------ */
+.price__list {
+    margin: 30px 15px;
+}
+
+.price__list > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #806474;
+}
+
+.img-title {
+    width: 82px;
+}
+
+.img-img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+.price-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-list caption,
+.price-list th,
+.price-list [colspan] {
+    padding: .5em;
+    color: #fff;
+    background: #000;
+}
+
+.price-list caption {
+    font-size: 1.0rem;
+    background: #000;
+}
+
+.price-list th {
+    background: #806474;
+}
+
+.price-list th,
+.price-list td {
+    border: 1px solid #000;
+}
+
+.price-list td {
+    width: 50%;
+    padding: .5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.price-list span {
+    display: block;
+    line-height: 1.2;
+    font-size: 1.0rem;
+}
+
+@media (min-width: 768px) {
+    .price__list {
+        max-width: 680px;
+        margin: 60px auto;
+    }
+
+    .price__list > h1 {
+        font-size: 1.6rem;
+    }
+
+    .img-title {
+        width: 164px;
+    }
+
+    .img-img {
+        width: 135px;
+    }
+
+    .price-list {
+        width: 100%;
+    }
+
+    .price-list caption {
+        font-size: 1.2rem;
+    }
+
+    .price-list caption,
+    .price-list th,
+    .price-list td,
+    .price-list [colspan] {
+        padding: .75em;
+    }
+
+    .price-list span {
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+}
+
+/* price link
+------------------------------ */
+.price-link {
+    padding: 0 0 40px;
+}
+
+.price-link__inner {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 450px;
+    margin: -10px auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.price-link__item {
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px);
+}
+
+@media (min-width: 768px) {
+    .price-link {
+        padding: 0 0 80px;
+    }
+
+    .price-link__inner {
+        max-width: 1010px;
+        margin: -20px auto;
+        padding: 0 15px;
+    }
+
+    .price-link__item {
+        margin: 20px 10px;
+        flex: 0 0 calc(25% - 20px);
+    }
+}

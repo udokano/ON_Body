@@ -1,0 +1,147 @@
+/*===================
+header
+=====================================*/
+
+#site-header {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.05);
+
+    .contents {
+        padding: 32px 0;
+
+        .site__logo {
+            width: 200px;
+        }
+    }
+
+    .header__nav {
+        ul {
+            li {
+                margin: 0 1.2rem;
+
+                a {
+                    font-size: 1.1rem;
+                    letter-spacing: 0.0755em;
+                }
+
+                a.is-active {
+                    color: #5e866f;
+                }
+            }
+        }
+    }
+
+    .right {
+        ul {
+            li {
+                width: 23px;
+            }
+
+            .tel {
+                margin: 0 1rem;
+                width: 21px;
+            }
+
+            .mail {
+                width: 33px;
+            }
+
+            .reserve {
+                width: 227px;
+            }
+        }
+    }
+}
+
+#site-header.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+}
+
+@media (max-width: 767px) {
+    #site-header {
+        .contents {
+            padding: 3.6% 0;
+
+            .site__logo {
+                width: 34%;
+            }
+        }
+
+        .menu__icon {
+            width: 30px;
+        }
+    }
+}
+
+/*===================
+ドロワーメニュー
+=====================================*/
+
+.quick-nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
+    transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
+    font-size: 1.4rem;
+    opacity: 0;
+    color: #fff;
+    background: #000;
+}
+
+.quick-nav.is-active {
+    opacity: 1;
+}
+
+.quick-nav__close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.quick-nav__close__item {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.quick-nav__close__item:nth-of-type(1) {
+    top: 12px;
+    transform: translateY(7px) rotate(-45deg);
+}
+
+.quick-nav__close__item:nth-of-type(2) {
+    top: 26px;
+    transform: translateY(-7px) rotate(45deg);
+}
+
+.quick-nav__list {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.quick-nav__list li {
+    padding: 1vh 0;
+}
+
+.quick-nav__list a {
+    display: block;
+    padding: 1vh 0;
+    color: #fff;
+    font-size: 1.5rem;
+}

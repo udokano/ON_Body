@@ -1935,10 +1935,13 @@ light tome: #919191;
 }
 
 .section-inner {
-  background-color: #eefaee;
   margin: auto;
   max-width: 450px;
   padding: 26px 15px;
+}
+
+.cat01 .section-inner {
+  background-color: #eefaee;
 }
 
 .question__cat {

@@ -4,7 +4,7 @@ dark tone:  #808080;
 light tome: #919191;
 */
 
-/*
+/*よくある質問ページ
 ------------------------------ */
 .qa {
     margin: 26px auto;
@@ -19,8 +19,39 @@ light tome: #919191;
     padding: 26px 15px;
 }
 
+/*カテゴリーごとに文字色背景色変える
+------------------------------ */
+
+/*お薬治療*/
 .cat01 .section-inner {
     background-color: #eefaee;
+}
+
+.cat01 .qa__question {
+    color: $green;
+    border-bottom: 1px solid $green;
+}
+
+/*冷却痩身*/
+
+.cat02 .section-inner {
+    background-color: #ebf7fe;
+}
+
+.cat02 .qa__question {
+    color: #6aafd4;
+    border-bottom: 1px solid #6aafd4;
+}
+
+/*脂肪吸引*/
+
+.cat03 .section-inner {
+    background-color: #fff7ea;
+}
+
+.cat03 .qa__question {
+    color: #e1a743;
+    border-bottom: 1px solid #e1a743;
 }
 
 .question__cat {
@@ -36,9 +67,7 @@ light tome: #919191;
     position: relative;
     line-height: 1.8rem;
     font-size: 1.4rem;
-    color: $green;
     font-weight: 600;
-    border-bottom: 1px solid $green;
     padding-bottom: 7px;
 }
 

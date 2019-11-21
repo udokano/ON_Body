@@ -1798,11 +1798,19 @@ ABOUT SECTION SURPRISE
   width: 82px;
 }
 
-.img-img {
+.price_thumb {
   display: block;
   height: auto;
   margin: auto;
   width: 80px;
+}
+
+.price_thumb.thumb01 {
+  width: 240px;
+}
+
+.price_thumb.thumb02 {
+  width: 160px;
 }
 
 .price-list {

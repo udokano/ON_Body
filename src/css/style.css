@@ -251,6 +251,7 @@ html {
   color: #fff;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   letter-spacing: 0.2em;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -282,6 +283,9 @@ html {
 }
 
 @media (max-width: 767px) {
+  .pages__title {
+    margin-top: 0;
+  }
   .pages__title .contents {
     padding: 45px 0;
   }
@@ -1157,6 +1161,15 @@ header
   }
 }
 
+@media (min-width: 768px) {
+  #site-header.pages {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9998;
+  }
+}
+
 /*===================
 ドロワーメニュー
 =====================================*/
@@ -1226,6 +1239,100 @@ header
   display: block;
   font-size: 1.5rem;
   padding: 1vh 0;
+}
+
+/*==
+SP NAVI slider
+======================*/
+@media (max-width: 767px) {
+  .sp__slide-header {
+    -webkit-box-shadow: 2px 0.06rem 0.2rem rgba(0, 0, 0, 0.8);
+    -webkit-transition: ease-in .2s;
+    background-color: #fff;
+    box-shadow: 2px 0.06rem 0.2rem rgba(0, 0, 0, 0.8);
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    transition: ease-in .2s;
+    width: 100%;
+    z-index: 9999;
+  }
+  .sp__slide-header .contents {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    padding: 0 3.8%;
+    width: 100%;
+  }
+  .sp__slide-header ul {
+    white-space: nowrap;
+  }
+  .sp__slide-header ul li {
+    display: inline-block;
+    float: none;
+  }
+  .sp__slide-header ul li:last-child {
+    margin-right: 0;
+  }
+  .sp__slide-header ul li a {
+    color: #454545;
+    display: block;
+    font-size: 0.22rem;
+    font-size: 1.44rem;
+    padding: 1.8rem 2.15rem;
+    position: relative;
+  }
+  .sp__slide-header ul li a.is-active {
+    color: #5e866f;
+  }
+  .sp__slide-header ul li a.is-active::after {
+    background-color: #5e866f;
+    bottom: 0;
+    content: "";
+    height: 2.5px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  /*矢印*/
+  /* swiper navigation */
+  .next-arw {
+    -webkit-transition: .5s;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s;
+    width: 20px;
+    z-index: 10;
+  }
+  .next-arw::before {
+    -webkit-transform: translateY(-50%);
+    border-color: transparent transparent transparent #707e7a;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+  }
+  .next-arw::after {
+    background: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    left: -5px;
+    position: absolute;
+    width: 5px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1537,13 +1644,14 @@ ABOUT SECTION CONCEPUT
     margin-top: 30px;
   }
   .about-sec.conceput .contents .about_contents-box .btn-area li {
-    margin-right: 1.1rem;
-    width: 33%;
+    margin-right: 0.7rem;
+    width: 33.333333333%;
   }
   .about-sec.conceput .contents .about_contents-box .btn-area li .btn {
     border-radius: 22px;
-    font-size: .7rem;
+    font-size: .92rem;
     height: 41px;
+    letter-spacing: 0.0001em;
     line-height: 41px;
   }
   .about-sec.conceput .contents .thumb {
@@ -1590,6 +1698,9 @@ ABOUT SECTION ACCESS
   }
   .about-sec.access .contents .btn-cont {
     width: 200px;
+  }
+  .about-sec.access .contents .btn-cont .btn-square {
+    font-size: 1.1rem;
   }
 }
 
@@ -2561,6 +2672,10 @@ light tome: #919191;
 }
 
 /*脂肪吸引*/
+.cat03.main-flex {
+  margin-bottom: 60px;
+}
+
 .cat03 .section-inner {
   background-color: #fff7ea;
 }
@@ -3394,14 +3509,14 @@ QUESTION
 }
 
 .question .contents .question__top li .question__desc-box .text-desc {
-  margin-left: 2%;
-  width: 65%;
+  margin-left: 3.0%;
+  width: 73%;
 }
 
 .question .contents .question__top li .question__desc-box .text-desc p {
   color: #2d2d2d;
   font-size: .8rem;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.001em;
   margin-bottom: 0.8rem;
 }
 
@@ -3677,7 +3792,7 @@ CLINIC INFO
   }
   .clinic .contents .clinic__info-text p {
     color: #656565;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1em;
     text-align: center;
   }

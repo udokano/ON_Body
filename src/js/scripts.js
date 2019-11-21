@@ -1,16 +1,31 @@
 // JavaScript Document
 
 //TOP__PAGE__HEADER__ARROW&FIXED
+var windowWidth = $(window).width();
+var windowSm = 768;
+if (windowWidth <= windowSm) {
+  //SP
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() == 0) {
+      $(".sp__slide-header").css("opacity", "0");
+    } else {
+      $(".sp__slide-header").css("opacity", "1.0");
+    }
+  });
+} else {
+  //PC
+  $(window).scroll(function () {
+    if ($(window).scrollTop() == 0) {
+      $("#js-slide").addClass("is-arw");
+      $("#site-header.top").removeClass("is-fixed");
+    } else {
+      $("#js-slide").removeClass("is-arw");
+      $("#site-header.top").addClass("is-fixed");
+    }
+  });
+}
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() == 0) {
-    $("#js-slide").addClass("is-arw");
-    $("#site-header.top").removeClass("is-fixed");
-  } else {
-    $("#js-slide").removeClass("is-arw");
-    $("#site-header.top").addClass("is-fixed");
-  }
-});
+
 
 //TOP_MENU_link
 $('.js-link').on('click', function (e) {
@@ -90,30 +105,39 @@ $(function () {
 
 $(function () {
   $('.header__nav ul li a').each(function () {
-
     //現在ページのURLの末尾を取得
     var activeUrl = location.pathname.split("/")[2]; // 2階層目
     //テスト出力
     console.log(activeUrl);
-
     //valu(カテゴリースラッグ)取得
     var href = $(this).attr('href');
     //テスト出力
-    console.log(href);
-
+    //console.log(href);
     if (href == activeUrl) {
       $(this).addClass("is-active");
-
-
     }
   });
-
-
+});
+//SP
+$(function () {
+  $('.nav-link li a').each(function () {
+    //現在ページのURLの末尾を取得
+    var activeUrl = location.pathname.split("/")[1]; // 2階層目
+    //テスト出力
+    console.log(activeUrl);
+    //valu(カテゴリースラッグ)取得
+    var href = $(this).attr('href');
+    //テスト出力
+    //console.log(href);
+    if (href == activeUrl) {
+      $(this).addClass("is-active");
+    }
+  });
 });
 
 
+//PRICE PAGE SP アコーディアン
 $(function () {
-
   $(".toggle-btn").on("click", function () {
     $(this).next().slideToggle();
     $(this).toggleClass("js-open");

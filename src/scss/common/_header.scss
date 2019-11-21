@@ -77,6 +77,15 @@ header
     }
 }
 
+@media (min-width: 768px) {
+    #site-header.pages {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9998;
+    }
+}
+
 /*===================
 ドロワーメニュー
 =====================================*/
@@ -144,4 +153,104 @@ header
     padding: 1vh 0;
     color: #fff;
     font-size: 1.5rem;
+}
+
+/*==
+SP NAVI slider
+======================*/
+
+@media (max-width: 767px) {
+    .sp__slide-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: #fff;
+        box-shadow: 2px 0.06rem 0.2rem rgba(0, 0, 0, 0.8);
+        text-align: left;
+        overflow: hidden;
+        opacity: 0;
+        transition: ease-in .2s;
+    }
+
+    .sp__slide-header .contents {
+        overflow-x: scroll;
+        box-sizing: border-box;
+        padding: 0 3.8%;
+        width: 100%;
+    }
+
+    .sp__slide-header ul {
+        //padding-bottom: 6px;
+        white-space: nowrap;
+    }
+
+    .sp__slide-header ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    .sp__slide-header ul li:last-child {
+        margin-right: 0;
+    }
+
+    .sp__slide-header ul li a {
+        display: block;
+        padding: 1.8rem 2.15rem;
+        font-size: 0.22rem;
+        color: #454545;
+        font-size: 1.44rem;
+        position: relative;
+    }
+
+    .sp__slide-header ul li a.is-active {
+        color: #5e866f;
+    }
+
+    .sp__slide-header ul li a.is-active::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2.5px;
+        background-color: #5e866f;
+        content: "";
+    }
+
+    /*矢印*/
+    /* swiper navigation */
+    .next-arw {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background: #fff;
+        -webkit-transition: .5s;
+        transition: .5s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+            width: 0;
+            height: 0;
+            border-width: 5px 0 5px 8px;
+            border-style: solid;
+            border-color: transparent transparent transparent #707e7a;
+        }
+
+        &::after {
+            content: "";
+            left: -5px;
+            position: absolute;
+            background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+            height: 100%;
+            width: 5px;
+        }
+    }
 }

@@ -247,6 +247,7 @@ html {
 ------------------------------ */
 
 .pages__title {
+    margin-top: 100px;
     background-color: #118d14;
     color: #fff;
     letter-spacing: 0.2em;
@@ -282,6 +283,8 @@ html {
 
 @media (max-width: 767px) {
     .pages__title {
+        margin-top: 0;
+
         .contents {
             padding: 45px 0;
         }

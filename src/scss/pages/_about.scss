@@ -229,14 +229,15 @@ ABOUT SECTION CONCEPUT
                     margin-top: 30px;
 
                     li {
-                        width: 33%;
-                        margin-right: 1.1rem;
+                        width: 33.333333333%;
+                        margin-right: 0.7rem;
 
                         .btn {
                             height: 41px;
                             line-height: 41px;
                             border-radius: 22px;
-                            font-size: .7rem;
+                            font-size: .92rem;
+                            letter-spacing: 0.0001em;
                         }
                     }
                 }
@@ -288,6 +289,10 @@ ABOUT SECTION ACCESS
 
             .btn-cont {
                 width: 200px;
+
+                .btn-square {
+                    font-size: 1.1rem;
+                }
             }
         }
     }

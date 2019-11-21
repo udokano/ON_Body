@@ -110,3 +110,13 @@ $(function () {
 
 
 });
+
+
+$(function () {
+
+  $(".toggle-btn").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("js-open");
+  });
+
+});

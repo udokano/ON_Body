@@ -298,7 +298,6 @@ html {
     width: 100%;
     margin: 0.5em auto;
     padding: 0 15px;
-    font-size: .7rem;
     box-sizing: border-box;
 }
 
@@ -308,6 +307,10 @@ html {
     color: #fff;
 }
 
+ul.breadcrumb > li > a > span {
+    font-size: .7rem !important;
+}
+
 .breadcrumb > li > a {
     color: #fff;
 }
@@ -315,12 +318,12 @@ html {
 .breadcrumb > li + li::before {
     margin: 0 .5em;
     content: ">";
+    font-size: .7rem;
 }
 
 @media (min-width: 768px) {
     .breadcrumb {
         margin: 1em auto;
-        font-size: .9rem;
     }
 }
 

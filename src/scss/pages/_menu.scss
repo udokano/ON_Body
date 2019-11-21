@@ -382,20 +382,31 @@
 
     .price-btn {
         border: 1px solid #686868;
-        height: 51px;
-        line-height: 51px;
+        height: 55px;
+        line-height: 55px;
         display: inline-block;
         margin: auto;
-        padding: 0 62px;
+        padding: 0 72px;
         position: relative;
         font-size: .8rem;
         color: #686868;
+        transition: .3s ease-in;
 
         &::after {
             height: 11px;
             width: 11px;
             right: 15px;
             border-color: #686868;
+            transition: .3s ease-in;
+        }
+
+        &:hover {
+            background-color: #686868;
+            color: #fff;
+
+            &::after {
+                border-color: #fff;
+            }
         }
     }
 }
@@ -407,7 +418,7 @@
         .price-btn {
             height: 31px;
             line-height: 31px;
-            padding: 0 62px;
+            padding: 0 64px;
 
             &::after {
                 height: 7px;
@@ -457,6 +468,7 @@
     border-bottom: 2px solid #454545;
     font-weight: 600;
     letter-spacing: 0.1em;
+    padding-left: 15px;
 }
 
 .img-col__img {

@@ -288,6 +288,10 @@ html {
   }
   .pages__title .contents {
     padding: 45px 0;
+    width: 100%;
+  }
+  .pages__title .contents h1 {
+    margin-bottom: 15px;
   }
 }
 
@@ -299,6 +303,7 @@ html {
   box-sizing: border-box;
   left: 0;
   margin: 0.5em auto;
+  overflow: hidden;
   padding: 0 15px;
   position: absolute;
   right: 0;
@@ -321,8 +326,9 @@ ul.breadcrumb > li > a > span {
 
 .breadcrumb > li + li::before {
   content: ">";
+  display: inline-block;
   font-size: .7rem;
-  margin: 0 .5em;
+  margin: 0  0 0 .5em;
 }
 
 @media (min-width: 768px) {
@@ -1246,10 +1252,10 @@ SP NAVI slider
 ======================*/
 @media (max-width: 767px) {
   .sp__slide-header {
-    -webkit-box-shadow: 2px 0.06rem 0.2rem rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.05);
     -webkit-transition: ease-in .2s;
     background-color: #fff;
-    box-shadow: 2px 0.06rem 0.2rem rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.05);
     left: 0;
     opacity: 0;
     overflow: hidden;
@@ -1257,6 +1263,7 @@ SP NAVI slider
     text-align: left;
     top: 0;
     transition: ease-in .2s;
+    visibility: hidden;
     width: 100%;
     z-index: 9999;
   }
@@ -1520,7 +1527,7 @@ ABOUT ANCHOR AREA
 
 @media (max-width: 767px) {
   .about__anchor {
-    padding: 55px 0;
+    padding: 20px 0;
   }
   .about__anchor .about__anchor-links .anchor-link {
     height: 135px;
@@ -1593,7 +1600,7 @@ ABOUT SECTION 共通デザイン
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     flex-flow: column;
-    padding: 80px 0;
+    padding: 40px 0;
   }
   .about-sec .contents .about_contents-box {
     width: 100%;
@@ -2276,22 +2283,35 @@ ABOUT SECTION SURPRISE
 }
 
 .gatter-box .price-btn {
+  -webkit-transition: .3s ease-in;
   border: 1px solid #686868;
   color: #686868;
   display: inline-block;
   font-size: .8rem;
-  height: 51px;
-  line-height: 51px;
+  height: 55px;
+  line-height: 55px;
   margin: auto;
-  padding: 0 62px;
+  padding: 0 72px;
   position: relative;
+  transition: .3s ease-in;
 }
 
 .gatter-box .price-btn::after {
+  -webkit-transition: .3s ease-in;
   border-color: #686868;
   height: 11px;
   right: 15px;
+  transition: .3s ease-in;
   width: 11px;
+}
+
+.gatter-box .price-btn:hover {
+  background-color: #686868;
+  color: #fff;
+}
+
+.gatter-box .price-btn:hover::after {
+  border-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -2301,7 +2321,7 @@ ABOUT SECTION SURPRISE
   .gatter-box .price-btn {
     height: 31px;
     line-height: 31px;
-    padding: 0 62px;
+    padding: 0 64px;
   }
   .gatter-box .price-btn::after {
     height: 7px;
@@ -2346,6 +2366,7 @@ ABOUT SECTION SURPRISE
   letter-spacing: 0.1em;
   margin-bottom: 1em;
   padding-bottom: .25em;
+  padding-left: 15px;
   text-align: center;
 }
 
@@ -2525,6 +2546,10 @@ ABOUT SECTION SURPRISE
 .price-list th:nth-of-type(2) {
   border-left: 1px solid #fff;
   border-right: 1px solid #47a9c2;
+}
+
+.price-list tbody tr:nth-of-type(1) td {
+  border-top: none;
 }
 
 .price-list th,

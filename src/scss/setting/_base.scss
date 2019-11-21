@@ -287,6 +287,11 @@ html {
 
         .contents {
             padding: 45px 0;
+            width: 100%;
+
+            h1 {
+                margin-bottom: 15px;
+            }
         }
     }
 }
@@ -302,6 +307,7 @@ html {
     margin: 0.5em auto;
     padding: 0 15px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .breadcrumb > li {
@@ -319,9 +325,10 @@ ul.breadcrumb > li > a > span {
 }
 
 .breadcrumb > li + li::before {
-    margin: 0 .5em;
+    margin: 0  0 0 .5em;
     content: ">";
     font-size: .7rem;
+    display: inline-block;
 }
 
 @media (min-width: 768px) {

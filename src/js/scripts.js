@@ -7,9 +7,9 @@ if (windowWidth <= windowSm) {
   //SP
   $(window).on("scroll", function () {
     if ($(window).scrollTop() == 0) {
-      $(".sp__slide-header").css("opacity", "0");
+      $(".sp__slide-header").css({ opacity: "0", visibility: "hidden" });
     } else {
-      $(".sp__slide-header").css("opacity", "1.0");
+      $(".sp__slide-header").css({ opacity: "1", visibility: "inherit" });
     }
   });
 } else {
@@ -121,10 +121,10 @@ $(function () {
 //SP
 $(function () {
   $('.nav-link li a').each(function () {
-    //現在ページのURLの末尾を取得
-    var activeUrl = location.pathname.split("/")[1]; // 2階層目
+
+    var activeUrl = location.pathname.split("/")[2]; // 2階層目
     //テスト出力
-    console.log(activeUrl);
+    //console.log(activeUrl);
     //valu(カテゴリースラッグ)取得
     var href = $(this).attr('href');
     //テスト出力
@@ -134,6 +134,21 @@ $(function () {
     }
   });
 });
+
+
+//Q&A ページ高さ揃える
+$(window).on("load resize", function () {
+  if ($(this).width() >= 768) {
+    setTimeout(function () {
+      var maxH = 0;
+      $(".main-flex").find(".section-inner").each(function () {
+        if ($(this).height() > maxH) maxH = $(this).height();
+      });
+      $(".main-flex").find(".section-inner").height(maxH);
+    }, 200);
+  }
+});
+
 
 
 //PRICE PAGE SP アコーディアン

@@ -247,6 +247,7 @@ html {
 ------------------------------ */
 
 .pages__title {
+    margin-top: 100px;
     background-color: #118d14;
     color: #fff;
     letter-spacing: 0.2em;
@@ -254,11 +255,11 @@ html {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
 
     .contents {
-        padding: 100px 0;
+        padding: 50px 0;
 
         h1 {
-            font-size: 3.1rem;
-            margin-bottom: 25px;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
             padding-bottom: 5px;
             position: relative;
 
@@ -267,7 +268,7 @@ html {
                 position: absolute;
                 left: 50%;
                 bottom: 0px;
-                width: 90px;
+                width: 60px;
                 height: 2px;
                 background-color: rgba(255, 255, 255, 0.5);
                 transform: translateX(-50%);
@@ -275,15 +276,27 @@ html {
         }
 
         span {
-            font-size: 1.08rem;
+            font-size: .8rem;
+            letter-spacing: 0.1em;
         }
     }
 }
 
 @media (max-width: 767px) {
     .pages__title {
+        margin-top: 0;
+
         .contents {
-            padding: 45px 0;
+            padding: 22px 0;
+            width: 100%;
+
+            h1 {
+                margin-bottom: 8px;
+
+                &::after {
+                    height: 1px;
+                }
+            }
         }
     }
 }
@@ -299,6 +312,7 @@ html {
     margin: 0.5em auto;
     padding: 0 15px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .breadcrumb > li {
@@ -316,9 +330,10 @@ ul.breadcrumb > li > a > span {
 }
 
 .breadcrumb > li + li::before {
-    margin: 0 .5em;
+    margin: 0  0 0 .5em;
     content: ">";
     font-size: .7rem;
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -330,6 +345,7 @@ ul.breadcrumb > li > a > span {
 /* bottom sns
 ------------------------------ */
 .btm-sns {
+    margin-top: 7.6rem;
     padding: 35px 15.625%;
     background: #e5e5e5;
 }

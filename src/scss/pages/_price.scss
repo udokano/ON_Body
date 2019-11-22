@@ -5,6 +5,12 @@
     font-family: $gosic;
 }
 
+.main > .price__list {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
 .price__list > h1 {
     text-align: center;
     font-size: 1.5rem;
@@ -57,6 +63,10 @@
     }
 }
 
+.price-list tbody tr:nth-of-type(1) td {
+    border-top: none;
+}
+
 .price-list th,
 .price-list td {
     box-sizing: border-box;
@@ -68,7 +78,7 @@
     padding: .5em;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #666;
+    border: 1px solid #ccc;
 }
 
 .price-list span {

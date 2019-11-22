@@ -112,13 +112,20 @@
 
 </div>
 <!-- /wrapper -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 <link rel="stylesheet" href="<%= path %>/src/css/rangeslider.css">
-<script src="<%= path %>/src/js/rangeslider.js"></script>
-<script src="<%= path %>/src/js/slick.min.js"></script>
-<script src="<%= path %>/src/js/common.js"></script>
-<script src="<%= path %>/src/js/scripts.js"></script>
+<script src="<%= path %>/src/js/rangeslider.min.js"></script>
+<script>
+    (function (d) {
+        var config = {
+            kitId: 'yrq5rir',
+            scriptTimeout: 3000,
+            async: true
+        },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
 <script>
     $(function () {
         var $document = $(document),
@@ -171,23 +178,19 @@
 
         });
     });
+</script>
 
-
-
-    $(window).on("load resize", function () {
-        if ($(this).width() >= 768) {
-            setTimeout(function () {
-                var maxH = 0;
-                $(".main-flex").find(".section-inner").each(function () {
-                    if ($(this).height() > maxH) maxH = $(this).height();
-                });
-                $(".main-flex").find(".section-inner").height(maxH);
-            }, 200);
-        }
-    });
+<script>
+    setTimeout(function () {
+        $(".toggle_wrap").css("opacity", "1.0");
+    }, 100);
 
 
 </script>
+<script src="<%= path %>/src/js/slick.min.js"></script>
+<script src="<%= path %>/src/js/common.js"></script>
+<script src="<%= path %>/src/js/scripts.js"></script>
+
 
 
 

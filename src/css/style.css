@@ -2861,9 +2861,14 @@ top=slide
 .top__slide-area .contents ul li .top__box .desc h2 {
   color: #8b6c3f;
   font-size: 1.9rem;
+  height: 50px;
   letter-spacing: .1em;
   margin-bottom: 5px;
   text-align: left;
+}
+
+.top__slide-area .contents ul li .top__box .desc h2.fz-middle {
+  font-size: 1.5rem;
 }
 
 .top__slide-area .contents ul li .top__box .desc p {
@@ -2887,10 +2892,21 @@ top=slide
 }
 
 .top__slide-area .contents ul li.bg-thumb {
-  background-image: url(../img/top/slide03_bg_img.png);
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: 42% auto;
+}
+
+.top__slide-area .contents ul li.bg-thumb.bg01 {
+  background-image: url(../img/top/slide04_bg_img.png);
+}
+
+.top__slide-area .contents ul li.bg-thumb.bg02 {
+  background-image: url(../img/top/slide03_bg_img.png);
+}
+
+.top__slide-area .contents ul li.bg-thumb.bg03 {
+  background-image: url(../img/top/slide05_bg_img.png);
 }
 
 .top__slide-area .contents ul li.triangle::after {
@@ -2935,6 +2951,9 @@ top=slide
     min-height: 240px;
     padding: 22px;
   }
+  .top__slide-area .contents ul li .top__box .desc h2 {
+    height: 25px;
+  }
   .top__slide-area .contents ul li .bottom__box .font-sm {
     font-size: 1.1rem;
   }
@@ -2975,7 +2994,7 @@ toggle button area
 .toggle__body .contents {
   -webkit-transition: ease-in .2s;
   background: no-repeat 0% 50% / 11% auto;
-  padding: 120px 0;
+  padding: 100px 0;
   position: relative;
   transition: ease-in .2s;
   z-index: 100;
@@ -2984,13 +3003,17 @@ toggle button area
 .toggle__body .contents .toggle_wrap {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
+  -webkit-transition: ease-in  .1s;
   justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: ease-in  .1s;
 }
 
 .toggle__body .contents .toggle_wrap .range__button {
   margin-right: 4px;
   position: relative;
-  width: 148px;
+  width: 114px;
 }
 
 .toggle__body .contents .toggle_wrap .range__button::before {
@@ -3021,6 +3044,12 @@ toggle button area
   font-size: 2.4rem;
   letter-spacing: 0.078em;
   z-index: 600;
+}
+
+.toggle__body .contents p.sub-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  margin-top: 32px;
 }
 
 .toggle__body.is-off {
@@ -3063,14 +3092,14 @@ toggle button area
 
 @media (max-width: 767px) {
   .toggle__body {
-    background-position: 180% 0%;
+    background-position: 150px 0%;
     overflow: hidden;
   }
   .toggle__body .contents {
-    padding: 6% 0 14%;
+    padding: 6% 0;
   }
   .toggle__body .contents .toggle_wrap .range__button {
-    width: 100px;
+    width: 90px;
   }
   .toggle__body .contents .toggle_wrap .logo__text {
     font-size: 2.4rem;
@@ -3083,6 +3112,9 @@ toggle button area
     font-size: 2.4rem;
     letter-spacing: 0.078em;
     z-index: 600;
+  }
+  .toggle__body .contents p.sub-text {
+    margin-top: 19px;
   }
 }
 
@@ -3463,6 +3495,22 @@ MENU
   background-image: url(../img/top/menu03_num_bg.png);
 }
 
+.menu .contents .menu__list li.menu04 {
+  background-image: url(../img/top/menu04_bg.jpg);
+}
+
+.menu .contents .menu__list li.menu04 .num04 {
+  background-image: url(../img/top/menu04_num_bg.png);
+}
+
+.menu .contents .menu__list li.menu05 {
+  background-image: url(../img/top/menu05_bg.jpg);
+}
+
+.menu .contents .menu__list li.menu05 .num05 {
+  background-image: url(../img/top/menu05_num_bg.png);
+}
+
 @media (max-width: 767px) {
   .menu .contents {
     padding: 30px 0;
@@ -3532,6 +3580,18 @@ MENU
   .menu .contents .menu__list li.menu03 .num03 {
     background-image: url(../img/top/menu03_num_bg_sp.png);
   }
+  .menu .contents .menu__list li.menu04 {
+    background-image: url(../img/top/menu04_bg_sp.jpg);
+  }
+  .menu .contents .menu__list li.menu04 .num04 {
+    background-image: url(../img/top/menu04_num_bg_sp.png);
+  }
+  .menu .contents .menu__list li.menu05 {
+    background-image: url(../img/top/menu05_bg_sp.jpg);
+  }
+  .menu .contents .menu__list li.menu05 .num05 {
+    background-image: url(../img/top/menu05_num_bg_sp.png);
+  }
 }
 
 /*===================
@@ -3543,6 +3603,12 @@ QUESTION
 
 .question .contents {
   padding: 40px 0;
+}
+
+.question .contents h1 {
+  font-size: 1.78rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 
 .question .contents .question__top {
@@ -3566,7 +3632,6 @@ QUESTION
 
 .question .contents .question__top li .band .band__inner h2 {
   font-size: 1.4rem;
-  font-weight: 600;
   letter-spacing: .05em;
   margin-bottom: 0;
 }
@@ -3698,7 +3763,7 @@ QUESTION
 
 @media (max-width: 767px) {
   .question .contents {
-    padding: 40px 0;
+    padding: 20px 0 40px;
   }
   .question .contents .question__top {
     display: block;

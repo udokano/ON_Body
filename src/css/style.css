@@ -1739,6 +1739,10 @@ ABOUT SECTION SURPRISE
   box-sizing: border-box;
 }
 
+.doctor:first-of-type {
+  margin-top: 4.6rem;
+}
+
 .doctor__heading {
   color: #5d935f;
   text-align: center;

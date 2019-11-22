@@ -302,12 +302,12 @@
 
 .tab-list li {
     height: 45px;
-    margin: 1.0135135135135136%;
+    margin: 0 1.4135135135135136%;
     line-height: 45px;
     border-radius: 21.15px;
     background: transparent;
     border: 1px solid $green;
-    flex: 0 0 29.97297297297297%;
+    flex: 0 0 28.97297297297297%;
     transition: ease-in .4s;
 
     &:hover {
@@ -346,7 +346,7 @@
     }
 
     .tab-list li {
-        margin: 1.8747126436781609%;
+        margin: 0 1.8747126436781609%;
         flex: 0 0 29.18390804597701%;
     }
 

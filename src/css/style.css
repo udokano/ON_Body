@@ -288,11 +288,14 @@ html {
     margin-top: 0;
   }
   .pages__title .contents {
-    padding: 45px 0;
+    padding: 22px 0;
     width: 100%;
   }
   .pages__title .contents h1 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+  }
+  .pages__title .contents h1::after {
+    height: 1px;
   }
 }
 
@@ -2200,16 +2203,16 @@ ABOUT SECTION SURPRISE
 }
 
 .tab-list li {
-  -ms-flex: 0 0 29.97297297297297%;
+  -ms-flex: 0 0 28.97297297297297%;
   -webkit-box-flex: 0;
   -webkit-transition: ease-in .4s;
   background: transparent;
   border: 1px solid #118d14;
   border-radius: 21.15px;
-  flex: 0 0 29.97297297297297%;
+  flex: 0 0 28.97297297297297%;
   height: 45px;
   line-height: 45px;
-  margin: 1.0135135135135136%;
+  margin: 0 1.4135135135135136%;
   transition: ease-in .4s;
 }
 
@@ -2256,7 +2259,7 @@ ABOUT SECTION SURPRISE
     -ms-flex: 0 0 29.18390804597701%;
     -webkit-box-flex: 0;
     flex: 0 0 29.18390804597701%;
-    margin: 1.8747126436781609%;
+    margin: 0 1.8747126436781609%;
   }
   .tab-list li.rows {
     display: block;

@@ -287,11 +287,15 @@ html {
         margin-top: 0;
 
         .contents {
-            padding: 45px 0;
+            padding: 22px 0;
             width: 100%;
 
             h1 {
-                margin-bottom: 15px;
+                margin-bottom: 8px;
+
+                &::after {
+                    height: 1px;
+                }
             }
         }
     }

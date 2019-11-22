@@ -342,6 +342,7 @@ ul.breadcrumb > li > a > span {
 ------------------------------ */
 .btm-sns {
   background: #e5e5e5;
+  margin-top: 7.6rem;
   padding: 35px 15.625%;
 }
 
@@ -2537,6 +2538,10 @@ ABOUT SECTION SURPRISE
   margin: 30px 15px;
 }
 
+.main > .price__list:last-of-type {
+  margin-bottom: 0;
+}
+
 .price__list > h1 {
   color: #47a9c2;
   font-size: 1.5rem;
@@ -2712,7 +2717,7 @@ light tome: #919191;
 .section-inner {
   margin: auto;
   max-width: 450px;
-  padding: 26px 15px;
+  padding: 2.2rem 2.6rem;
 }
 
 /*カテゴリーごとに文字色背景色変える
@@ -2738,8 +2743,8 @@ light tome: #919191;
 }
 
 /*脂肪吸引*/
-.cat03.main-flex {
-  margin-bottom: 60px;
+.main-flex.cat03 .qa:last-child {
+  margin-bottom: 0;
 }
 
 .cat03 .section-inner {
@@ -2785,7 +2790,7 @@ light tome: #919191;
 }
 
 .qa__answer {
-  padding: 1em 0;
+  padding: 1em 0 0;
   text-align: justify;
   word-break: break-all;
 }
@@ -2805,7 +2810,7 @@ light tome: #919191;
     width: 50%;
   }
   .section-inner {
-    padding: 40px 15px 20px;
+    padding: 40px 45px;
   }
   .qa__question {
     line-height: 2.2rem;

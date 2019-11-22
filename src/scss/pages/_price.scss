@@ -5,6 +5,12 @@
     font-family: $gosic;
 }
 
+.main > .price__list {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
 .price__list > h1 {
     text-align: center;
     font-size: 1.5rem;

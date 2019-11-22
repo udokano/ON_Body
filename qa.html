@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./src/css/slick.css">
     <link rel="stylesheet" href="./src/css/style.css?var=1.3">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>ON Body Clinic |  Q&amp;A</title>
     <meta name="description" content="新宿駅徒歩1分の好アクセスにある、ダイエット専門のクリニックON Body Clinic(オン・ボディ・クリニック)GLP-1処方・冷却痩身・脂肪吸引などのダイエット施術において、お客様から寄せられる、多くの質問に回答するページです。">
     <meta name="keywords" content="新宿,ダイエット,メディカルダイエット,痩身,脂肪吸引,ラクやせ,冷却痩身,GLP-1">
@@ -393,6 +400,19 @@
 <script src="./src/js/slick.min.js"></script>
 <script src="./src/js/common.js"></script>
 <script src="./src/js/scripts.js"></script>
+<script>
+        $(window).on("load resize", function () {
+                if ($(this).width() >= 768) {
+                        setTimeout(function () {
+                                var maxH = 0;
+                                $(".main-flex").find(".section-inner").each(function () {
+                                        if ($(this).height() > maxH) maxH = $(this).height();
+                                });
+                                $(".main-flex").find(".section-inner").height(maxH);
+                        }, 200);
+                }
+        });
+</script>
 
 </body>
 

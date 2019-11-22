@@ -25,6 +25,11 @@ top=slide
                             font-size: 1.9rem;
                             text-align: left;
                             margin-bottom: 5px;
+                            height: 50px;
+                        }
+
+                        h2.fz-middle {
+                            font-size: 1.5rem;
                         }
 
                         p {
@@ -53,10 +58,21 @@ top=slide
             }
 
             li.bg-thumb {
-                background-image: url(../img/top/slide03_bg_img.png);
                 background-position: 100% 50%;
                 background-size: 42% auto;
                 background-repeat: no-repeat;
+            }
+
+            li.bg-thumb.bg01 {
+                background-image: url(../img/top/slide04_bg_img.png);
+            }
+
+            li.bg-thumb.bg02 {
+                background-image: url(../img/top/slide03_bg_img.png);
+            }
+
+            li.bg-thumb.bg03 {
+                background-image: url(../img/top/slide05_bg_img.png);
             }
 
             li.triangle::after {
@@ -108,6 +124,14 @@ top=slide
                     height: 60vw;
                     min-height: 240px;
 
+                    .top__box {
+                        .desc {
+                            h2 {
+                                height: 25px;
+                            }
+                        }
+                    }
+
                     .bottom__box {
                         .font-sm {
                             font-size: 1.1rem;
@@ -152,7 +176,7 @@ toggle button area
     }
 
     .contents {
-        padding: 120px 0;
+        padding: 100px 0;
         position: relative;
         z-index: 100;
         background: no-repeat 0% 50% / 11% auto;
@@ -160,9 +184,12 @@ toggle button area
 
         .toggle_wrap {
             justify-content: center;
+            margin-bottom: 10px;
+            opacity: 0;
+            transition: ease-in  .1s;
 
             .range__button {
-                width: 148px;
+                width: 114px;
                 margin-right: 4px;
                 position: relative;
 
@@ -195,6 +222,12 @@ toggle button area
             font-size: 2.4rem;
             letter-spacing: 0.078em;
             z-index: 600;
+        }
+
+        p.sub-text {
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            margin-top: 32px;
         }
     }
 }
@@ -242,14 +275,14 @@ toggle button area
 @media (max-width: 767px) {
     .toggle__body {
         overflow: hidden;
-        background-position: 180% 0%;
+        background-position: 150px 0%;
 
         .contents {
-            padding: 6% 0 14%;
+            padding: 6% 0;
 
             .toggle_wrap {
                 .range__button {
-                    width: 100px;
+                    width: 90px;
                 }
 
                 .logo__text {
@@ -266,6 +299,10 @@ toggle button area
                 font-size: 2.4rem;
                 letter-spacing: 0.078em;
                 z-index: 600;
+            }
+
+            p.sub-text {
+                margin-top: 19px;
             }
         }
     }
@@ -670,6 +707,22 @@ MENU
                     background-image: url(../img/top/menu03_num_bg.png);
                 }
             }
+
+            li.menu04 {
+                background-image: url(../img/top/menu04_bg.jpg);
+
+                .num04 {
+                    background-image: url(../img/top/menu04_num_bg.png);
+                }
+            }
+
+            li.menu05 {
+                background-image: url(../img/top/menu05_bg.jpg);
+
+                .num05 {
+                    background-image: url(../img/top/menu05_num_bg.png);
+                }
+            }
         }
     }
 }
@@ -757,6 +810,22 @@ MENU
                         background-image: url(../img/top/menu03_num_bg_sp.png);
                     }
                 }
+
+                li.menu04 {
+                    background-image: url(../img/top/menu04_bg_sp.jpg);
+
+                    .num04 {
+                        background-image: url(../img/top/menu04_num_bg_sp.png);
+                    }
+                }
+
+                li.menu05 {
+                    background-image: url(../img/top/menu05_bg_sp.jpg);
+
+                    .num05 {
+                        background-image: url(../img/top/menu05_num_bg_sp.png);
+                    }
+                }
             }
         }
     }
@@ -771,6 +840,12 @@ QUESTION
 
     .contents {
         padding: 40px 0;
+
+        h1 {
+            font-size: 1.78rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 40px;
+        }
 
         .question__top {
             margin-bottom: 50px;
@@ -791,7 +866,6 @@ QUESTION
                             font-size: 1.4rem;
                             margin-bottom: 0;
                             letter-spacing: .05em;
-                            font-weight: 600;
                         }
 
                         &::after {
@@ -919,7 +993,7 @@ QUESTION
 @media (max-width: 767px) {
     .question {
         .contents {
-            padding: 40px 0;
+            padding: 20px 0 40px;
 
             .question__top {
                 display: block;

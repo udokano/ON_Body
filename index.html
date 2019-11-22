@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="./src/css/slick.css">
     <link rel="stylesheet" href="./src/css/style.css?var=1.3">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-    <title>ON Body Clinic | TOP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="新宿駅徒歩1分の好アクセスにある、ダイエット専門のクリニックON Body Clinic(オン・ボディ・クリニック)当院では、皆様を理想的なボディに切り替える為に、痩身施術・ダイエット処方を行なってます。ご自身の体型にお悩みの方、部分痩せしたい方は、新宿ON Body Clinic(オン・ボディ・クリニック)へ">
     <meta name="keywords" content="新宿,ダイエット,メディカルダイエット,痩身,脂肪吸引,ラクやせ,冷却痩身,GLP-1,部分痩せ">
     <meta name="format-detection" content="telephone=no" />
+    <title>ON Body Clinic | TOP</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152960049-1"></script>
     <script>
@@ -25,16 +32,6 @@
         gtag('config', 'UA-152960049-1');
     </script>
 
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'yrq5rir',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
 </head>
 
 
@@ -112,17 +109,26 @@
 
 
 <!-- 記述 -->
-
 <div class="top__slide-area bg-cover">
-
     <div class="contents">
-
         <ul id="js-slide" class="is-arw">
+            <li class="box-size slick-slide triangle bg-thumb bg03">
+                <div class="top__box flex-sb">
+                    <div class="desc">
+                        <h2 class="f-ryu">栄養管理</h2>
+                        <p>当院の医師から、適切な食事療法を<br class="pc-only">ご提案させていただきます。加えて、<br class="pc-only">GLP-1投与で食欲抑制を行います。</p>
+                    </div>
+                </div><!-- /top_box -->
+                <div class="bottom__box">
+                    <p class=" font-sm cg">栄養管理指導/食欲抑制GLP-1</p>
+                    <a href=" #" class="btn btn-slide">詳しくはこちら</a>
+                </div>
+            </li>
             <li class="box-size slick-slide triangle">
                 <div class="top__box flex-sb">
                     <div class="desc">
                         <h2 class="f-ryu">お薬治療</h2>
-                        <p>お薬の処方や投与で食欲抑制を行います。<br class="pc-only">FDA承認をとれている信頼のあるお薬を<br class="pc-only">使用しておりますので安心してご利用<br class="pc-only">いただけます。</p>
+                        <p>効率的ダイエットを実現するための<br class="pc-only">お薬を処方します。<br class="pc-only">FDA承認をとれている信頼のある<br class="pc-only">お薬を使用しております。</p>
                     </div>
 
                     <div class="img">
@@ -130,7 +136,20 @@
                     </div>
                 </div><!-- /top_box -->
                 <div class="bottom__box">
-                    <p class=" font-sm cg">GLP-1/BBX/etc...</p>
+                    <p class=" font-sm cg">BBX/防風通聖散/etc...</p>
+                    <a href=" #" class="btn btn-slide">詳しくはこちら</a>
+                </div>
+            </li>
+
+            <li class="box-size slick-slide triangle bg-thumb bg01">
+                <div class="top__box flex-sb">
+                    <div class="desc">
+                        <h2 class="f-ryu">運動療法</h2>
+                        <p>COMING SOON<br class="pc-only">医療機器で運動をサポートします<br class="pc-only">導入予定</p>
+                    </div>
+                </div><!-- /top_box -->
+                <div class="bottom__box">
+                    <p class=" font-sm cg">運動指導・機械</p>
                     <a href=" #" class="btn btn-slide">詳しくはこちら</a>
                 </div>
             </li>
@@ -138,8 +157,8 @@
             <li class="box-size slick-slide triangle">
                 <div class="top__box flex-sb">
                     <div class="desc">
-                        <h2 class="f-ryu">冷却痩身</h2>
-                        <p>4箇所同時使用で効率よく施術を行います。<br class="pc-only">脂肪冷却は脂肪を冷却することによって<br class="pc-only">脂肪細胞を死滅させ、老廃物として<br class="pc-only">排出する痩身技術です。</p>
+                        <h2 class="f-ryu">ボディデザイン</h2>
+                        <p>気になる脂肪を冷却して理想のボディをデザインしてゆきます。メスを使用しないので、ダウンタイムがほとんどなく、気軽に受けられる痩身施術です。</p>
                     </div>
 
                     <div class="img">
@@ -154,67 +173,21 @@
             </li>
 
 
-            <li class="box-size slick-slide triangle  bg-thumb">
+            <li class="box-size slick-slide triangle  bg-thumb bg02">
                 <div class="top__box flex-sb">
                     <div class="desc">
-                        <h2 class="f-ryu">脂肪吸引</h2>
+                        <h2 class="f-ryu">外科治療</h2>
                         <p>脂肪を部位的に取り除きます。<br class="pc-only">物理的に脂肪細胞を取り除くため、<br class="pc-only">リバウンドしにくく、部分的に痩せたい<br class="pc-only">という方におすすめの施術です。</p>
                     </div>
 
                 </div><!-- /top_box -->
                 <div class="bottom__box">
+                    <p class=" font-sm cg">脂肪溶解注射・脂肪吸引</p>
                     <a href=" #" class="btn btn-slide">詳しくはこちら</a>
                 </div>
             </li>
 
-            <li class="box-size slick-slide triangle">
-                <div class="top__box flex-sb">
-                    <div class="desc">
-                        <h2 class="f-ryu">お薬治療</h2>
-                        <p>お薬の処方や投与で食欲抑制を行います。FDA承認をとれている信頼のあるお薬を使用しておりますので安心してご利用いただけます。</p>
-                    </div>
 
-                    <div class="img">
-                        <img src="./src/img/top/slide01_img.png" alt="サムネイル">
-                    </div>
-                </div><!-- /top_box -->
-                <div class="bottom__box">
-                    <p class=" font-sm cg">GLP-1/BBX/etc...</p>
-                    <a href=" #" class="btn btn-slide">詳しくはこちら</a>
-                </div>
-            </li>
-
-            <li class="box-size slick-slide triangle">
-                <div class="top__box flex-sb">
-                    <div class="desc">
-                        <h2 class="f-ryu">冷却痩身</h2>
-                        <p>4箇所同時使用で効率よく施術を行います。<br class="pc-only">脂肪冷却は脂肪を冷却することによって<br class="pc-only">脂肪細胞を死滅させ、老廃物として<br class="pc-only">排出する痩身技術です。</p>
-                    </div>
-
-                    <div class="img">
-                        <img src="./src/img/top/slide02_img.png" alt="サムネイル">
-                    </div>
-                </div><!-- /top_box -->
-                <div class="bottom__box">
-                    <p class=" font-sm cg">クラツーアルファ</p>
-                    <a href=" #" class="btn btn-slide">詳しくはこちら</a>
-                </div>
-
-            </li>
-
-
-            <li class="box-size slick-slide triangle  bg-thumb">
-                <div class="top__box flex-sb">
-                    <div class="desc">
-                        <h2 class="f-ryu">脂肪吸引</h2>
-                        <p>脂肪を部位的に取り除きます。<br class="pc-only">物理的に脂肪細胞を取り除くため、<br class="pc-only">リバウンドしにくく、部分的に痩せたい<br class="pc-only">という方におすすめの施術です。</p>
-                    </div>
-
-                </div><!-- /top_box -->
-                <div class="bottom__box">
-                    <a href=" #" class="btn btn-slide">詳しくはこちら</a>
-                </div>
-            </li>
         </ul>
 
 
@@ -241,17 +214,13 @@
         </div><!-- /toggle_wrap -->
 
         <p class="f-ryu text-light cw tc">さぁ、理想的なカラダへ<br>切り替えていきましょう</p>
-
+        <p
+            class="cw sub-text tc">当院では、食事療法、お薬の処方や医療機器による減量のサポートを行っています。<br class="pc-only">患者様が無理しすぎず継続できることを一番に、<br class="pc-only">ひとりひとりに合った減量プランを専門医がご提案しています。</p>
     </div><!-- /contents -->
-
-
 </section>
-
 <section class="col-2__box po_rel">
-
     <div class="bg bg-left po_ad"></div>
     <div class="bg bg-right po_ad"></div>
-
     <div class="contents flex-sb">
         <div class="left__nav gosic">
             <ul>
@@ -261,72 +230,54 @@
                         <img src="./src/img/top/navi_about_thumb.jpg" alt="はじめての方へサムネイル" class="cover">
                     </div>
                     <div class="nav__texts po_rel triangle triangle-left">
-                        <h2><span class="font-sm">ON BODY CLINICへようこそ</span><br>
+                        <h2><span class="font-sm">ON Body Clinicへようこそ</span><br>
                             初めての方へ</h2>
-
                         <a href="./about.html" class="btn btn-green">詳しく見る</a>
                     </div>
-
                 </li>
-
                 <li class="flex box-size align-cent">
-
                     <div class="nav__texts po_rel triangle triangle-right">
                         <h2><span class="font-sm">24時間かんたんWeb予約</span><br>
                                             来院予約</h2>
                         <a href="https://connect-app.net/r_yag/reserve/main?cid=2" class="btn btn-green"
                             target="_blank">予約サイトへ</a>
                     </div>
-
                     <div class="thumb">
                         <img src="./src/img/top/navi_reseve_thumb.jpg" alt="はじめての方へサムネイル" class="cover">
                     </div>
-
-
                 </li>
             </ul>
         </div><!-- /middle__nav -->
 
         <div class="right__concept box-size">
-
             <div class="greeting box-size po_rel bg-cover">
                 <div class="band f-ryu po_ad cw">
                     <div class="band__inner po_rel flex-sb align-cent">
                         <h2>ご挨拶</h2><span class="font-sm">concept</span>
                     </div><!-- /band__inner -->
-
                 </div><!-- /band -->
-
                 <p>我慢や運動をしてダイエットをしても、継続するには相当な努力が必要です。<br class="pc-only">多少なり無理をせざるを得ないは精神衛生上良いとは言い難く、<br class="pc-only">栄養不足やストレスによる体調不良に陥るリスクもございます。</p>
                 <p>そこで私達は、医療の側面からストレスフリーなダイエットをご提案すべく、新宿駅徒歩1分圏内にダイエット専門院を開院しました。</p>
                 <p class="mb0">理想の体型を追及したい方も、健康のために痩せたい方も是非当院までお気軽にご相談ください。<br class="pc-only">ご来院をお待ちしております。</p>
-
             </div><!-- /greeting -->
-
             <aside class="banner__area flex-sb">
                 <a href="https://goo.gl/maps/qig1Gcw6YvigPiHM8" target="_blank"><img
                         src="./src/img/common/banner01.jpg" alt="新宿駅徒歩1分"></a>
                 <a href="menu.html"><img src="./src/img/common/banner02.jpg" alt="ダイエット専門員"></a>
             </aside>
-
         </div><!-- /right__concept -->
-
     </div><!-- /contents  -->
-
 </section>
 
 <section class="menu">
     <div class="contents">
-
         <ul class="menu__list">
             <li class="bg-cover menu01 cw po_rel">
                 <a href="#" class="cw" target="_blank">
                     <div class="num-bg num01 po_ad"></div>
                     <div class="desc gosic box-size po_rel arrow">
-                        <h2 class="fw600">お薬治療 <span class="font-sm">(GLP-1/BBX/etc...)</span></h2>
-
-                        <p>食欲を抑制するお薬や、通弁を繋がすお薬を処方しております。<br class="pc-only">無理せず、ストレスを感じる事なく健康的に痩せることが可能です。<br class="pc-only">こまめに通院することなく理想の体型を手に入れる事ができます</p>
-
+                        <h2 class="fw600">栄養管理<span class="font-sm">(栄養管理指導/食欲抑制GLP-1/etc...)</span></h2>
+                        <p>医師による専門的で無理のない食事の栄養摂取のプランをご提案させていただきます。<br class="pc-only">栄養管理のアドバイスのみならず。食欲を抑制するGLP-1を処方してつらい食事制限をすることなく、ダイエットが実現できます。</p>
                         <div class="anchor__links anchor-menu01 js-anchor flex">
                             <span data-url="#" class="is-select js-link">準備中</span>
                             <span data-url="#" class="js-link">準備中</span>
@@ -335,18 +286,46 @@
                         </div><!-- /anchor__links -->
 
                     </div><!-- /desc -->
-
             </li>
-
             <li class="bg-cover menu02 cw po_rel">
-                <a href="./pr01" class="cw" target="_blank">
+                <a href="#" class="cw" target="_blank">
                     <div class="num-bg num02 po_ad"></div>
                     <div class="desc gosic box-size po_rel arrow">
-                        <h2 class="fw600">冷却痩身<span class="font-sm">(クラツーアルファ)</span></h2>
-
-                        <p>医療痩身分野の一つである<br class="pc-only">「脂肪を冷却して溶解する」タイプの美容機器です。<br class="pc-only">施術は痛みがなく、また脂肪細胞自体を減らす為<br class="pc-only">リバウンドしにくいという特徴があります。</p>
-
+                        <h2 class="fw600">お薬治療<span class="font-sm">(BBX/防風通聖散/etc...)</span></h2>
+                        <p>ダイエットを効率的にするお薬や、<br class="pc-only">通弁を繋がすお薬を処方しております。激しい運動をせずに健康的に痩せることが可能です。<br class="pc-only">こまめに通院することなく理想の体型を手に入れる事ができます</p>
                         <div class="anchor__links anchor-menu02 js-anchor flex">
+                            <span data-url="#" class="is-select js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                        </div><!-- /anchor__links -->
+                    </div><!-- /desc -->
+                </a>
+            </li>
+            <li class="bg-cover menu03 cw po_rel">
+                <a href="#" class="cw" target="_blank">
+                    <div class="num-bg num03 po_ad"></div>
+                    <div class="desc gosic box-size po_rel arrow">
+                        <h2 class="fw600">運動療法<span class="font-sm">(運動指導/機械)</span></h2>
+                        <p>COMING SOON<br class="pc-only">医療機器で運動をサポートします。<br class="pc-only">導入予定</p>
+                        <div class="anchor__links anchor-menu03 js-anchor flex">
+                            <span data-url="#" class="is-select js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                            <span data-url="#" class="js-link">準備中</span>
+                        </div><!-- /anchor__links -->
+
+                    </div><!-- /desc -->
+                </a>
+            </li>
+
+            <li class="bg-cover menu04 cw po_rel">
+                <a href="./pr01" class="cw" target="_blank">
+                    <div class="num-bg num04 po_ad"></div>
+                    <div class="desc gosic box-size po_rel arrow">
+                        <h2 class="fw600">ボディデザイン</h2>
+                        <p>「脂肪を冷却して溶解する」タイプの美容機器を用いて、理想のボディをデザインしてゆきます。<br class="pc-only">施術は痛みがなく、また脂肪細胞自体を減らす為<br class="pc-only">リバウンドしにくいという特徴があります。</p>
+                        <div class="anchor__links anchor-menu04 js-anchor flex">
                             <span data-url="https://souki-kai.or.jp/onbody/pr01/#merit"
                                 class="is-select js-link">特徴</span>
                             <span data-url="https://souki-kai.or.jp/onbody/pr01/#desc__area" class="js-link">内容</span>
@@ -358,15 +337,13 @@
                 </a>
             </li>
 
-            <li class="bg-cover menu03 cw po_rel mb0">
+            <li class="bg-cover menu05 cw po_rel ">
                 <a href="#" class="cw">
-                    <div class="num-bg num03 po_ad"></div>
+                    <div class="num-bg num05 po_ad"></div>
                     <div class="desc gosic box-size po_rel arrow">
                         <h2 class="fw600">脂肪吸引</h2>
-
-                        <p>脂肪吸引では短時間で身体を引き締める事が可能です。<br class="pc-only">通常のダイエットでは落とせない深層脂肪も吸引が出来、物理的に脂肪細胞を取り除く事から、リバウンドもしにくい施術です。</p>
-
-                        <div class="anchor__links anchor-menu03 js-anchor flex">
+                        <p>気になる脂肪を物理的に取り除き、通常のダイエットでは落とせない深層脂肪を落とすことが可能です。脂肪細胞その物を消滅させるので、リバウンドがしにくい施術です。</p>
+                        <div class="anchor__links anchor-menu05 js-anchor flex">
                             <span data-url="#" class="is-select js-link">準備中</span>
                             <span data-url="#" class="js-link">準備中</span>
                             <span data-url="#" class="js-link">準備中</span>
@@ -376,23 +353,21 @@
                     </div><!-- /desc -->
                 </a>
             </li>
+
         </ul>
     </div><!-- /contents -->
-
-
 </section>
 
 <section class="question">
     <div class="contents">
+        <h1 class="tc f-ryu">美容クリニックが本気であなたをサポート</h1>
         <ul class="question__top flex-sb gosic">
             <li class="po_rel">
                 <div class="band po_ad">
                     <div class="band__inner po_rel cw">
                         <h2>美容医療とジムとの違い</h2>
                     </div>
-
                 </div><!-- /band -->
-
                 <div class="question__desc-box flex align-cent">
                     <div class="thumb"><img src="./src/img/top/qa_thumb01.png" alt="サムネイル画像""></div>
                     <div class=" text-desc">
@@ -645,13 +620,20 @@
 
 </div>
 <!-- /wrapper -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 <link rel="stylesheet" href="./src/css/rangeslider.css">
-<script src="./src/js/rangeslider.js"></script>
-<script src="./src/js/slick.min.js"></script>
-<script src="./src/js/common.js"></script>
-<script src="./src/js/scripts.js"></script>
+<script src="./src/js/rangeslider.min.js"></script>
+<script>
+    (function (d) {
+        var config = {
+            kitId: 'yrq5rir',
+            scriptTimeout: 3000,
+            async: true
+        },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
 <script>
     $(function () {
         var $document = $(document),
@@ -704,23 +686,19 @@
 
         });
     });
+</script>
 
-
-
-    $(window).on("load resize", function () {
-        if ($(this).width() >= 768) {
-            setTimeout(function () {
-                var maxH = 0;
-                $(".main-flex").find(".section-inner").each(function () {
-                    if ($(this).height() > maxH) maxH = $(this).height();
-                });
-                $(".main-flex").find(".section-inner").height(maxH);
-            }, 200);
-        }
-    });
+<script>
+    setTimeout(function () {
+        $(".toggle_wrap").css("opacity", "1.0");
+    }, 100);
 
 
 </script>
+<script src="./src/js/slick.min.js"></script>
+<script src="./src/js/common.js"></script>
+<script src="./src/js/scripts.js"></script>
+
 
 
 

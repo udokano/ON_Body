@@ -64,6 +64,23 @@ $(".js-anchor.anchor-menu03 span").mouseover(
     }
   }
 );
+$(".js-anchor.anchor-menu04 span").mouseover(
+  function () {
+    if (!$(this).hasClass("is-select")) {
+      $(".js-anchor.anchor-menu04 span").not(this).removeClass("is-select");
+      $(this).addClass("is-select");
+    }
+  }
+);
+
+$(".js-anchor.anchor-menu05 span").mouseover(
+  function () {
+    if (!$(this).hasClass("is-select")) {
+      $(".js-anchor.anchor-menu05 span").not(this).removeClass("is-select");
+      $(this).addClass("is-select");
+    }
+  }
+);
 
 //TOP__PAGE__slide
 

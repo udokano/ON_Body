@@ -120,5 +120,18 @@
 <script src="<%= path %>/src/js/slick.min.js"></script>
 <script src="<%= path %>/src/js/common.js"></script>
 <script src="<%= path %>/src/js/scripts.js"></script>
+<script>
+        $(window).on("load resize", function () {
+                if ($(this).width() >= 768) {
+                        setTimeout(function () {
+                                var maxH = 0;
+                                $(".main-flex").find(".section-inner").each(function () {
+                                        if ($(this).height() > maxH) maxH = $(this).height();
+                                });
+                                $(".main-flex").find(".section-inner").height(maxH);
+                        }, 200);
+                }
+        });
+</script>
 
 </body>

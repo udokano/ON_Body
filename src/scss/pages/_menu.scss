@@ -391,6 +391,7 @@
         position: relative;
         font-size: .8rem;
         color: #fff;
+        letter-spacing: 0.09em;
 
         &::after {
             height: 11px;
@@ -409,6 +410,7 @@
             height: 31px;
             line-height: 31px;
             padding: 0 64px;
+            font-size: 1.1rem;
 
             &::after {
                 height: 7px;

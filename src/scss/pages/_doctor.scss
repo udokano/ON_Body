@@ -10,6 +10,10 @@
 
 .doctor {
     box-sizing: border-box;
+
+    &:first-of-type {
+        margin-top: 4.6rem;
+    }
 }
 
 .doctor__heading {

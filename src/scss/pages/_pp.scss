@@ -1,0 +1,46 @@
+/* common
+------------------------------ */
+@media (min-width: 768px) {
+    .section-inner {
+        max-width: 890px;
+    }
+}
+
+/* contents
+------------------------------ */
+.policy {
+    padding: 2.5em 0;
+    text-align: justify;
+    font-family: $gosic;
+}
+
+.txt-border {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $green;
+    font-family: $gosic;
+}
+
+.policy__body dt {
+    color: $green;
+    font-size: 120%;
+}
+
+.policy__body dd + dt {
+    margin-top: 1.5em;
+}
+
+.policy__body ol {
+    padding-left: 2em;
+    list-style: none;
+    counter-reset: reset-name;
+}
+
+.policy__body ol > li::before {
+    display: inline-block;
+    float: left;
+    width: 0;
+    content: "(" counter(reset-name) ")";
+    counter-increment: reset-name;
+    text-indent: -2em;
+}

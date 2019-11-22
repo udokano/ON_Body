@@ -1783,7 +1783,7 @@ ABOUT SECTION SURPRISE
 }
 
 .doctor__affiliation dt {
-  color: #806474;
+  color: #5d935f;
   text-indent: -.5em;
 }
 
@@ -1866,6 +1866,10 @@ ABOUT SECTION SURPRISE
     -webkit-box-ordinal-group: 4;
     margin-top: -100px;
     order: 3;
+  }
+  /*紹介文のないドクターの余白調整*/
+  .doctor__history.top__desc-none {
+    margin-top: -140px;
   }
   .doctor__sns {
     -ms-flex-order: 4;
@@ -2487,6 +2491,53 @@ ABOUT SECTION SURPRISE
   .tab-table {
     margin-top: 1.62em;
   }
+}
+
+/* common
+------------------------------ */
+@media (min-width: 768px) {
+  .section-inner {
+    max-width: 890px;
+  }
+}
+
+/* contents
+------------------------------ */
+.policy {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  padding: 2.5em 0;
+  text-align: justify;
+}
+
+.txt-border {
+  border-bottom: 1px solid #118d14;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.policy__body dt {
+  color: #118d14;
+  font-size: 120%;
+}
+
+.policy__body dd + dt {
+  margin-top: 1.5em;
+}
+
+.policy__body ol {
+  counter-reset: reset-name;
+  list-style: none;
+  padding-left: 2em;
+}
+
+.policy__body ol > li::before {
+  content: "(" counter(reset-name) ")";
+  counter-increment: reset-name;
+  display: inline-block;
+  float: left;
+  text-indent: -2em;
+  width: 0;
 }
 
 /* price__list

@@ -64,7 +64,7 @@
 
 .doctor__affiliation dt {
     text-indent: -.5em;
-    color: #806474;
+    color: #5d935f;
 }
 
 .doctor__sns {
@@ -151,6 +151,11 @@
         -webkit-order: 3;
         -ms-flex-order: 3;
         order: 3;
+    }
+
+    /*紹介文のないドクターの余白調整*/
+    .doctor__history.top__desc-none {
+        margin-top: -140px;
     }
 
     .doctor__sns {

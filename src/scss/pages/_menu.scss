@@ -447,6 +447,10 @@
 .menu-lower-box {
     margin-bottom: 30px;
     font-family: $gosic;
+
+    &:nth-of-type(3) {
+        margin-bottom: 0;
+    }
 }
 
 .heading-border {
@@ -455,7 +459,7 @@
     text-align: center;
     font-size: 1.4rem;
     color: #454545;
-    border-bottom: 2px solid #454545;
+    border-bottom: 2px solid #686868;
     font-weight: 600;
     letter-spacing: 0.1em;
 }

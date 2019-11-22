@@ -339,6 +339,9 @@ ul.breadcrumb > li > a > span {
   .breadcrumb {
     margin: 1em auto;
   }
+  ul.breadcrumb > li > a > span {
+    font-size: .88rem !important;
+  }
 }
 
 /* bottom sns
@@ -1661,7 +1664,7 @@ ABOUT SECTION CONCEPUT
   }
   .about-sec.conceput .contents .about_contents-box .btn-area li .btn {
     border-radius: 22px;
-    font-size: .92rem;
+    font-size: 1.0rem;
     height: 41px;
     letter-spacing: 0.0001em;
     line-height: 41px;
@@ -2298,6 +2301,7 @@ ABOUT SECTION SURPRISE
   display: inline-block;
   font-size: .8rem;
   height: 55px;
+  letter-spacing: 0.09em;
   line-height: 55px;
   margin: auto;
   padding: 0 72px;
@@ -2316,6 +2320,7 @@ ABOUT SECTION SURPRISE
     margin-bottom: 0;
   }
   .gatter-box .price-btn {
+    font-size: 1.1rem;
     height: 31px;
     line-height: 31px;
     padding: 0 64px;
@@ -3645,12 +3650,9 @@ QUESTION
 }
 
 .question .contents .question__other dt p, .question .contents .question__other dd p {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .question .contents .question__other dt .qa-texts, .question .contents .question__other dd .qa-texts {

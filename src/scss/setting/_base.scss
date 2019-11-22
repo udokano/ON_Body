@@ -340,6 +340,10 @@ ul.breadcrumb > li > a > span {
     .breadcrumb {
         margin: 1em auto;
     }
+
+    ul.breadcrumb > li > a > span {
+        font-size: .88rem !important;
+    }
 }
 
 /* bottom sns

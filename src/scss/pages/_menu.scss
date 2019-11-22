@@ -346,7 +346,7 @@
     }
 
     .tab-list li {
-        margin: 0.5747126436781609%;
+        margin: 1.8747126436781609%;
         flex: 0 0 29.18390804597701%;
     }
 
@@ -382,6 +382,7 @@
 
     .price-btn {
         border: 1px solid #686868;
+        background-color: #686868;
         height: 55px;
         line-height: 55px;
         display: inline-block;
@@ -389,24 +390,13 @@
         padding: 0 72px;
         position: relative;
         font-size: .8rem;
-        color: #686868;
-        transition: .3s ease-in;
+        color: #fff;
 
         &::after {
             height: 11px;
             width: 11px;
             right: 15px;
-            border-color: #686868;
-            transition: .3s ease-in;
-        }
-
-        &:hover {
-            background-color: #686868;
-            color: #fff;
-
-            &::after {
-                border-color: #fff;
-            }
+            border-color: #fff;
         }
     }
 }
@@ -468,7 +458,6 @@
     border-bottom: 2px solid #454545;
     font-weight: 600;
     letter-spacing: 0.1em;
-    padding-left: 15px;
 }
 
 .img-col__img {
@@ -476,17 +465,6 @@
     width: 106px;
     margin: auto;
     box-sizing: border-box;
-}
-
-.img-col__img::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    box-sizing: border-box;
-    border: 1px solid #454545;
 }
 
 .img-col__txt,
@@ -508,7 +486,7 @@
 .difinition-box,
 .tab-table th,
 .tab-table td {
-    border: 1px solid #767676;
+    border: 1px solid #b3b3b3;
 }
 
 .difinition-box dt,
@@ -520,7 +498,19 @@
 }
 
 .difinition-box dd {
-    padding: 1em;
+    padding: 1.2em;
+
+    ul {
+        li {
+            padding-left: 2.2rem;
+            background: url(../img/common/icon_check.svg) no-repeat 0% (50% / contain);
+            margin-bottom: 15px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .tab-table {

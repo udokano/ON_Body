@@ -255,11 +255,11 @@ html {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
 
     .contents {
-        padding: 100px 0;
+        padding: 50px 0;
 
         h1 {
-            font-size: 3.1rem;
-            margin-bottom: 25px;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
             padding-bottom: 5px;
             position: relative;
 
@@ -268,7 +268,7 @@ html {
                 position: absolute;
                 left: 50%;
                 bottom: 0px;
-                width: 90px;
+                width: 60px;
                 height: 2px;
                 background-color: rgba(255, 255, 255, 0.5);
                 transform: translateX(-50%);
@@ -276,7 +276,8 @@ html {
         }
 
         span {
-            font-size: 1.08rem;
+            font-size: .8rem;
+            letter-spacing: 0.1em;
         }
     }
 }

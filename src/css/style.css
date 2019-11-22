@@ -256,12 +256,12 @@ html {
 }
 
 .pages__title .contents {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .pages__title .contents h1 {
-  font-size: 3.1rem;
-  margin-bottom: 25px;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
   padding-bottom: 5px;
   position: relative;
 }
@@ -275,11 +275,12 @@ html {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 90px;
+  width: 60px;
 }
 
 .pages__title .contents span {
-  font-size: 1.08rem;
+  font-size: .8rem;
+  letter-spacing: 0.1em;
 }
 
 @media (max-width: 767px) {
@@ -2254,7 +2255,7 @@ ABOUT SECTION SURPRISE
     -ms-flex: 0 0 29.18390804597701%;
     -webkit-box-flex: 0;
     flex: 0 0 29.18390804597701%;
-    margin: 0.5747126436781609%;
+    margin: 1.8747126436781609%;
   }
   .tab-list li.rows {
     display: block;
@@ -2287,9 +2288,9 @@ ABOUT SECTION SURPRISE
 }
 
 .gatter-box .price-btn {
-  -webkit-transition: .3s ease-in;
+  background-color: #686868;
   border: 1px solid #686868;
-  color: #686868;
+  color: #fff;
   display: inline-block;
   font-size: .8rem;
   height: 55px;
@@ -2297,25 +2298,13 @@ ABOUT SECTION SURPRISE
   margin: auto;
   padding: 0 72px;
   position: relative;
-  transition: .3s ease-in;
 }
 
 .gatter-box .price-btn::after {
-  -webkit-transition: .3s ease-in;
-  border-color: #686868;
+  border-color: #fff;
   height: 11px;
   right: 15px;
-  transition: .3s ease-in;
   width: 11px;
-}
-
-.gatter-box .price-btn:hover {
-  background-color: #686868;
-  color: #fff;
-}
-
-.gatter-box .price-btn:hover::after {
-  border-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -2370,7 +2359,6 @@ ABOUT SECTION SURPRISE
   letter-spacing: 0.1em;
   margin-bottom: 1em;
   padding-bottom: .25em;
-  padding-left: 15px;
   text-align: center;
 }
 
@@ -2380,18 +2368,6 @@ ABOUT SECTION SURPRISE
   margin: auto;
   position: relative;
   width: 106px;
-}
-
-.img-col__img::after {
-  -webkit-box-sizing: border-box;
-  border: 1px solid #454545;
-  box-sizing: border-box;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .img-col__txt,
@@ -2413,7 +2389,7 @@ ABOUT SECTION SURPRISE
 .difinition-box,
 .tab-table th,
 .tab-table td {
-  border: 1px solid #767676;
+  border: 1px solid #b3b3b3;
 }
 
 .difinition-box dt,
@@ -2425,7 +2401,17 @@ ABOUT SECTION SURPRISE
 }
 
 .difinition-box dd {
-  padding: 1em;
+  padding: 1.2em;
+}
+
+.difinition-box dd ul li {
+  background: url(../img/common/icon_check.svg) no-repeat 0% 50%/contain;
+  margin-bottom: 15px;
+  padding-left: 2.2rem;
+}
+
+.difinition-box dd ul li:last-of-type {
+  margin-bottom: 0;
 }
 
 .tab-table {

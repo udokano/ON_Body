@@ -22,14 +22,14 @@ top=slide
                         h2 {
                             color: #8b6c3f;
                             letter-spacing: .1em;
-                            font-size: 1.9rem;
+                            font-size: 1.6rem;
                             text-align: left;
                             margin-bottom: 5px;
                             height: 50px;
                         }
 
                         h2.fz-middle {
-                            font-size: 1.5rem;
+                            font-size: 1.25rem;
                         }
 
                         p {
@@ -129,6 +129,14 @@ top=slide
                             h2 {
                                 height: 25px;
                             }
+
+                            h2.fz-middle {
+                                font-size: 1.42rem;
+                            }
+
+                            p {
+                                font-size: 0.98rem;
+                            }
                         }
                     }
 
@@ -141,7 +149,7 @@ top=slide
 
                 li.bg-thumb {
                     background-size: auto 100%;
-                    background-repeat: no-repeat;
+                    background-position: 116% 0%;
                 }
             }
         }
@@ -302,7 +310,7 @@ toggle button area
             }
 
             p.sub-text {
-                margin-top: 19px;
+                margin-top: 50px;
             }
         }
     }
@@ -763,7 +771,7 @@ MENU
                         }
 
                         p {
-                            font-size: 1.34rem;
+                            font-size: 1.1rem;
                             margin-bottom: 1.2rem;
                             letter-spacing: 0.05em;
                         }

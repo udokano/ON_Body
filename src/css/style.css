@@ -2860,7 +2860,7 @@ top=slide
 
 .top__slide-area .contents ul li .top__box .desc h2 {
   color: #8b6c3f;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   height: 50px;
   letter-spacing: .1em;
   margin-bottom: 5px;
@@ -2868,7 +2868,7 @@ top=slide
 }
 
 .top__slide-area .contents ul li .top__box .desc h2.fz-middle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .top__slide-area .contents ul li .top__box .desc p {
@@ -2954,11 +2954,17 @@ top=slide
   .top__slide-area .contents ul li .top__box .desc h2 {
     height: 25px;
   }
+  .top__slide-area .contents ul li .top__box .desc h2.fz-middle {
+    font-size: 1.42rem;
+  }
+  .top__slide-area .contents ul li .top__box .desc p {
+    font-size: 0.98rem;
+  }
   .top__slide-area .contents ul li .bottom__box .font-sm {
     font-size: 1.1rem;
   }
   .top__slide-area .contents ul li.bg-thumb {
-    background-repeat: no-repeat;
+    background-position: 116% 0%;
     background-size: auto 100%;
   }
 }
@@ -3114,7 +3120,7 @@ toggle button area
     z-index: 600;
   }
   .toggle__body .contents p.sub-text {
-    margin-top: 19px;
+    margin-top: 50px;
   }
 }
 
@@ -3429,13 +3435,13 @@ MENU
 }
 
 .menu .contents .menu__list li .desc h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 8px;
   text-align: left;
 }
 
 .menu .contents .menu__list li .desc h2 .font-sm {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .menu .contents .menu__list li .desc p {
@@ -3543,7 +3549,7 @@ MENU
     font-size: 0.9rem;
   }
   .menu .contents .menu__list li .desc p {
-    font-size: 1.34rem;
+    font-size: 1.1rem;
     letter-spacing: 0.05em;
     margin-bottom: 1.2rem;
   }

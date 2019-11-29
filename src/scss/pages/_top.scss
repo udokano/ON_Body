@@ -669,8 +669,9 @@ MENU
                     .anchor__links {
                         span {
                             width: 18%;
-                            display: block;
+                            display: inline-block;
                             color: #fff;
+                            padding: 1px 2px;
                             text-align: center;
                             margin-right: 7%;
                             transition: ease-in .3s;
@@ -760,7 +761,7 @@ MENU
 
                     .desc {
                         width: 71%;
-                        margin-left: 32%;
+                        margin-left: 29%;
                         padding: 25px 7% 25px 15%;
                         box-sizing: border-box;
 
@@ -785,6 +786,19 @@ MENU
                             span {
                                 width: 25%;
                                 font-size: .9rem;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .anchor__links.col-01 {
+                            span {
+                                width: 100%;
+                            }
+                        }
+
+                        .anchor__links.col-02 {
+                            span {
+                                width: 50%;
                             }
                         }
                     }

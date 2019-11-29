@@ -3481,9 +3481,10 @@ MENU
   -webkit-transition: ease-in .3s;
   background-color: transparent;
   color: #fff;
-  display: block;
+  display: inline-block;
   font-size: .7rem;
   margin-right: 7%;
+  padding: 1px 2px;
   text-align: center;
   transition: ease-in .3s;
   width: 18%;
@@ -3563,7 +3564,7 @@ MENU
   .menu .contents .menu__list li .desc {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-left: 32%;
+    margin-left: 29%;
     padding: 25px 7% 25px 15%;
     width: 71%;
   }
@@ -3583,7 +3584,14 @@ MENU
   }
   .menu .contents .menu__list li .desc .anchor__links span {
     font-size: .9rem;
+    white-space: nowrap;
     width: 25%;
+  }
+  .menu .contents .menu__list li .desc .anchor__links.col-01 span {
+    width: 100%;
+  }
+  .menu .contents .menu__list li .desc .anchor__links.col-02 span {
+    width: 50%;
   }
   .menu .contents .menu__list li .desc.arrow::after {
     -webkit-transform: none;

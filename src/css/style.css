@@ -2210,16 +2210,16 @@ ABOUT SECTION SURPRISE
 }
 
 .tab-list li {
-  -ms-flex: 0 0 28.97297297297297%;
+  -ms-flex: 0 0 44.97297297297297%;
   -webkit-box-flex: 0;
   -webkit-transition: ease-in .4s;
   background: transparent;
   border: 1px solid #118d14;
-  border-radius: 21.15px;
-  flex: 0 0 28.97297297297297%;
+  border-radius: 25.15px;
+  flex: 0 0 44.97297297297297%;
   height: 45px;
   line-height: 45px;
-  margin: 0 1.4135135135135136%;
+  margin: 0 1.4135135135135136% 1.2455556645555%;
   transition: ease-in .4s;
 }
 
@@ -2263,9 +2263,9 @@ ABOUT SECTION SURPRISE
     margin: 0 -0.5747126436781609%;
   }
   .tab-list li {
-    -ms-flex: 0 0 29.18390804597701%;
+    -ms-flex: 0 0 20.18390804597701%;
     -webkit-box-flex: 0;
-    flex: 0 0 29.18390804597701%;
+    flex: 0 0 20.18390804597701%;
     margin: 0 1.8747126436781609%;
   }
   .tab-list li.rows {
@@ -2422,7 +2422,7 @@ ABOUT SECTION SURPRISE
 }
 
 .difinition-box dd ul li {
-  background: url(../img/common/icon_check.svg) no-repeat 0% 50%/contain;
+  background: url(../img/common/icon_check.svg) no-repeat 0% 50%/1.93rem;
   margin-bottom: 15px;
   padding-left: 2.2rem;
 }

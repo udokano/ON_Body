@@ -302,12 +302,12 @@
 
 .tab-list li {
     height: 45px;
-    margin: 0 1.4135135135135136%;
+    margin: 0 1.4135135135135136% 1.2455556645555%;
     line-height: 45px;
-    border-radius: 21.15px;
+    border-radius: 25.15px;
     background: transparent;
     border: 1px solid $green;
-    flex: 0 0 28.97297297297297%;
+    flex: 0 0 44.97297297297297%;
     transition: ease-in .4s;
 
     &:hover {
@@ -347,7 +347,7 @@
 
     .tab-list li {
         margin: 0 1.8747126436781609%;
-        flex: 0 0 29.18390804597701%;
+        flex: 0 0 20.18390804597701%;
     }
 
     .tab-list li.rows {
@@ -509,7 +509,7 @@
     ul {
         li {
             padding-left: 2.2rem;
-            background: url(../img/common/icon_check.svg) no-repeat 0% (50% / contain);
+            background: url(../img/common/icon_check.svg) no-repeat 0% 50% / 1.93rem;
             margin-bottom: 15px;
 
             &:last-of-type {

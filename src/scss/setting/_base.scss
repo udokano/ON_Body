@@ -707,6 +707,7 @@ BUTTON STYLE
 
 .btn-slide {
     background: #bea279;
+    font-size: .92rem;
 
     &::after {
         content: "";
@@ -718,6 +719,12 @@ BUTTON STYLE
         top: 50%;
         right: 20px;
         transform: translateY(-50%) rotate(135deg);
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-slide {
+        font-size: 1.42rem;
     }
 }
 
@@ -869,8 +876,8 @@ ARROW
     top: 50%;
     transform: translateY(-50%);
     background: no-repeat 50% 50% / auto 100%;
-    width: 40px;
-    height: 80px;
+    width: 4vw;
+    height: 5vw;
     position: absolute;
 
     &::after {
@@ -880,12 +887,12 @@ ARROW
 
 .slick-arrow.next {
     background-image: url(../img/top/slide_arrow_next.png);
-    right: -80px;
+    right: -4.5vw;
 }
 
 .slick-arrow.prev {
     background-image: url(../img/top/slide_arrow_prev.png);
-    left: -80px;
+    left: -4.5vw;
 }
 
 @media (max-width: 767px) {

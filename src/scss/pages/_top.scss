@@ -3,7 +3,7 @@ top=slide
 ============================*/
 
 .top__slide-area {
-    //margin-top: 96px;
+    margin-top: 96px;
     background-image: url(../img/top/top_slide_area_bg.jpg);
 
     .contents {
@@ -11,7 +11,7 @@ top=slide
             li {
                 background-color: #f8f8f8;
                 padding: 22px;
-                margin: 0 0.12%;
+                margin: 0 .45vw;
                 height: 263px;
                 position: relative;
 
@@ -54,6 +54,10 @@ top=slide
                     bottom: 22px;
                     left: 22px;
                     right: 22px;
+
+                    p {
+                        margin-bottom: 5px;
+                    }
                 }
             }
 
@@ -76,9 +80,17 @@ top=slide
             }
 
             li.triangle::after {
-                display: none;
-                opacity: 0;
-                transition: ease-in .2s;
+                visibility: hidden;
+                transition: ease-in-out .5s;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                position: absolute;
+                border-width: 0;
+                border-color: #fff transparent transparent transparent;
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
 
@@ -89,16 +101,9 @@ top=slide
 
                     &::after {
                         content: "";
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
+                        height: auto;
+                        visibility: visible;
                         border-width: 38.5px 45px 0 45px;
-                        border-color: #fff transparent transparent transparent;
-                        top: -20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        display: block;
                         opacity: 1;
                     }
                 }
@@ -109,7 +114,7 @@ top=slide
 
 @media (max-width: 767px) {
     .top__slide-area {
-        // margin-top: 59px;
+        margin-top: 0;
 
         .contents {
             padding: 45px 0;

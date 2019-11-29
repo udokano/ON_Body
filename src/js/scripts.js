@@ -89,6 +89,7 @@ $(function () {
     slidesToScroll: 1,
     centerMode: false,
     arrows: true,
+
     slidesToShow: 3,
     prevArrow: '<div class="arrow prev"></div>',
     nextArrow: '<div class="arrow next"></div>',

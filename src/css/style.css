@@ -2278,13 +2278,13 @@ ABOUT SECTION SURPRISE
     width: 900px;
   }
   .tab-list {
-    margin: 0 -0.5747126436781609%;
+    margin: 0 -0.9747126436781609%;
   }
   .tab-list li {
-    -ms-flex: 0 0 20.18390804597701%;
+    -ms-flex: 0 0 17.18390804597701%;
     -webkit-box-flex: 0;
-    flex: 0 0 20.18390804597701%;
-    margin: 0 1.8747126436781609%;
+    flex: 0 0 17.18390804597701%;
+    margin: 0 0.8747126436781609%;
   }
   .tab-list li.rows {
     display: block;

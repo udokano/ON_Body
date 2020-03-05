@@ -1,0 +1,122 @@
+/**************
+
+
+conversion AREA
+
+
+****************/
+
+.cv {
+    padding: 2.7rem 0;
+    background: url(../img/cv_bg.jpg) no-repeat 50% (50% / cover);
+
+    p {
+        font-size: 1.78rem;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .contents {
+        padding: 20px 0;
+        justify-content: center;
+
+        .left {
+            width: 30%;
+
+            .logo {
+                width: 28%;
+                margin: 0 auto 20px;
+            }
+
+            .tel {
+                .number {
+                    color: #282828;
+                    font-size: 2.4rem;
+                    letter-spacing: 0.05em;
+                    padding-left: 70px;
+                    line-height: 1;
+                    background: url(../img/cv_tel_icon.png) no-repeat 0% 50% / 45px 41px;
+
+                    span {
+                        font-size: 1.1rem;
+                        text-align: center;
+                        display: block;
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            ul {
+                li {
+                    width: 48.8%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cv {
+        padding: 16px 0;
+        background-image: url(../img/cv_bg_sp.jpg);
+
+        p {
+            margin: 0 auto .9rem;
+            font-size: 1.3rem;
+            text-align: left;
+            width: 90%;
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+            line-height: 1.38;
+        }
+
+        .contents {
+            padding: 0;
+            flex-flow: column-reverse;
+
+            .left {
+                width: 100%;
+                display: block;
+
+                .logo {
+                    display: none;
+                }
+
+                .tel {
+                    text-align: center;
+
+                    .number {
+                        font-size: 2.7rem;
+                        padding-left: 40px;
+                        background-size: 30px auto;
+                        font-family: a-otf-ryumin-pr6n, serif;
+                        font-weight: 300;
+                        font-style: normal;
+
+                        span {
+                            font-size: 1.1rem;
+                            text-align: center;
+                            display: block;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+
+                p {
+                    font-size: 1.4rem;
+                }
+
+                ul {
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+    }
+}

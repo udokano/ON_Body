@@ -16,6 +16,10 @@
     height: 800px;
 }
 
+.key__visual.pr04 {
+    height: 951px;
+}
+
 @media (max-width: 767px) {
     .pc {
         display: none;
@@ -26,6 +30,10 @@
     }
 
     .key__visual {
+        height: auto;
+    }
+
+    .key__visual.pr04 {
         height: auto;
     }
 }
@@ -51,6 +59,10 @@
     margin-bottom: 170px;
 }
 
+.roulette.roulette02.pr03 .contents {
+    margin-bottom: 160px;
+}
+
 .rotating-slider {
     height: 500px !important;
     position: relative;
@@ -71,6 +83,14 @@
 
 .rotating-slider.top.rotating02 {
     margin: -14em auto 5em;
+}
+
+.rotating-slider.rotating02.pr03 {
+    margin: -14em auto 5em;
+}
+
+.pr03__top .rotating-slider.rotating02.pr03 {
+    margin: -13em auto 5em;
 }
 
 .rotating-slider.rotating02 {
@@ -199,10 +219,20 @@
     transition: ease-in .2s;
 }
 
+.rotating-slider.pr03 ul.slides li {
+    -webkit-clip-path: polygon(50% 107.4%, 0 0, 100% 0) !important;
+    clip-path: polygon(50% 107.4%, 0 0, 100% 0) !important;
+}
+
 @media (min-width: 768px) {
     .rotating-slider ul.slides li {
         width: 71% !important;
         height: 286px !important;
+    }
+
+    .rotating-slider.pr03 ul.slides li {
+        width: 100% !important;
+        height: 340px !important;
     }
 }
 
@@ -381,7 +411,11 @@
     }
 
     .roulette.roulette02.top .contents {
-        margin-bottom: -220px;
+         margin-bottom: -220px;
+    }
+
+    .roulette.roulette02.pr03 .contents {
+        margin-bottom: 180px;
     }
 
     .rotating-slider.rotating01 {
@@ -390,6 +424,20 @@
 
     .rotating-slider.rotating02 {
         margin: -29em auto 5em;
+    }
+
+    /* PR02 */
+
+    .rotating-slider.rotating02.pr02 {
+        margin: -389px auto 5em;
+    }
+
+    .rotating-slider.rotating02.pr03 {
+        margin: -29em auto 5em !important;
+    }
+
+    .pr03__top .rotating-slider.rotating02.pr03 {
+        margin: -29em auto 5em !important;
     }
 
     /* トップページ */
@@ -421,6 +469,11 @@
         -o-transition: ease-out 0.22s;
         transition: ease-out 0.22s;
         top: 37px !important;
+    }
+
+    .rotating-slider.pr03 ul.slides li {
+        -webkit-clip-path: polygon(14% 0%, 85% 0%, 100% 100%, 1% 100%) !important;
+        clip-path: polygon(14% 0%, 85% 0%, 100% 100%, 1% 100%) !important;
     }
 
     .rotating-slider.rotating01 ul.slides li {
@@ -592,5 +645,15 @@
 
     .roulette__center.roulette02 {
         top: 13%;
+    }
+
+    /* センターマーク　PR02 */
+
+    .roulette__center.roulette02.pr02 {
+        top: 9%;
+    }
+
+    .roulette__center.roulette02.pr03 {
+        top: 8%;
     }
 }

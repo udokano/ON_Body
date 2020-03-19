@@ -1,0 +1,158 @@
+/**************
+よくある質問
+**/
+
+.qa.pc__only {
+    .contents {
+        padding: 100px 0 6.75rem;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 1.98554rem;
+            margin-bottom: 4.9375rem;
+            line-height: 1;
+
+            // padding-bottom: 18px;
+            font-weight: 600;
+            letter-spacing: 0;
+
+            //background: url(../img/qa_h2_bg.png) 50% 100% (no-repeat / 80px);
+       
+        }
+
+        .qa__box {
+            margin-bottom: 35px;
+
+            dt,
+            dd {
+                padding: 18px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    letter-spacing: 0;
+                }
+
+                .tit {
+                    width: 20px;
+                    margin-right: 20px;
+                    padding-bottom: 4px;
+                }
+            }
+
+            dt {
+                background-color: #6aafd4;
+                line-height: 1.1;
+
+                span {
+                    font-size: 1.22rem;
+                }
+            }
+
+            dd {
+                background-color: #f6f6f6;
+                line-height: 1.7;
+                padding-bottom: 2.75rem;
+
+                span {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .qa.sp__only {
+        background-color: #98ced5;
+
+        .contents {
+            padding: 100px 0;
+
+            h2 {
+                font-size: 2.4rem;
+                margin-bottom: 30px;
+                padding-bottom: 7px;
+                color: #000;
+                background: url(../img/qa_h2_bg.png) 50% 100% / 80px auto;
+                background-repeat: no-repeat;
+            }
+
+            .qa__box {
+                margin-bottom: 35px;
+
+                dt,
+                dd {
+                    padding: 18px;
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    .tit {
+                        width: 20px;
+                        margin-right: 20px;
+                    }
+                }
+
+                dt {
+                    background-color: #007e7a;
+                    line-height: 1.1;
+
+                    span {
+                        font-size: 1.22rem;
+                    }
+                }
+
+                dd {
+                    background-color: #eaeaea;
+                    line-height: 1.7;
+
+                    span {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .qa.sp__only {
+        .contents {
+            padding: 40px 0;
+
+            .qa__box {
+                margin-bottom: 25px;
+
+                dt,
+                dd {
+                    padding: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    color: #454545;
+                    background-color: transparent;
+                    font-size: 1.4rem;
+
+                    span.tit {
+                        width: 48px;
+                        margin-right: 20px;
+                    }
+                }
+
+                span {
+                    width: 80%;
+                }
+
+                dt {
+                    border: 1px solid #fff;
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                dd {}
+            }
+        }
+    }
+}

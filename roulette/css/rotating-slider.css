@@ -63,6 +63,14 @@
     margin-bottom: 160px;
 }
 
+/* PR05 */
+
+.roulette.pr05 .contents {
+    /*  overflow: hidden; */
+    height: 600px;
+    margin-bottom: 160px;
+}
+
 .rotating-slider {
     height: 500px !important;
     position: relative;
@@ -87,6 +95,10 @@
 
 .rotating-slider.rotating02.pr03 {
     margin: -14em auto 5em;
+}
+
+.rotating-slider.rotating02.pr05 {
+    margin: -15em auto 5em;
 }
 
 .pr03__top .rotating-slider.rotating02.pr03 {
@@ -390,6 +402,13 @@
     transform: translateX(-50%) rotate(180deg);
 }
 
+.roulette__center.roulette02.pr05 {
+    top: 36%;
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    -ms-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
+}
+
 @media (max-width: 767px) {
     .roulette.roulette01 {
         margin-top: 52px;
@@ -411,7 +430,7 @@
     }
 
     .roulette.roulette02.top .contents {
-         margin-bottom: -220px;
+        margin-bottom: -220px;
     }
 
     .roulette.roulette02.pr03 .contents {
@@ -436,8 +455,23 @@
         margin: -29em auto 5em !important;
     }
 
-    .pr03__top .rotating-slider.rotating02.pr03 {
-        margin: -29em auto 5em !important;
+    /* PR05 */
+
+    .roulette.pr05 .contents {
+        width: 100%;
+        margin-bottom: 170px;
+    }
+
+    .pr05__top .rotating-slider.rotating02.pr03 {
+        margin: -375px auto 5em !important;
+    }
+
+    .pr05__top .rotating-slider.rotating02.pr03 {
+        margin: -375px auto 5em !important;
+    }
+
+    .pr05__bottom .rotating-slider.rotating02.pr05 {
+        margin: -372px auto 5em !important;
     }
 
     /* トップページ */

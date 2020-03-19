@@ -1,0 +1,1081 @@
+/*
+テスラフォーマーとは
+-------------------------------*/
+
+.about {
+    .about__desc {
+        padding: 3.1rem 0;
+        background-image: url(../img/bg01.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/bg01_sp.jpg);
+        }
+
+        .contents {
+            p {
+                text-align: center;
+                font-size: 1.68rem;
+                color: #0676a1;
+            }
+        }
+    }
+
+    .about__diff {
+        padding: 8.5rem 0 10.4rem;
+
+        @media (max-width: 767px) {
+            padding: 20.5rem 0 3.4rem;
+        }
+
+        .contents {
+            .desc__text {
+                width: 48%;
+                max-width: 700px;
+                min-width: 470px;
+
+                @media (max-width: 767px) {
+                    width: 90%;
+                    min-width: auto;
+                    max-width: none;
+                    margin: auto;
+                }
+
+                h3 {
+                    color: #023a4f;
+                    margin-bottom: 1.5rem;
+                    font-size: 2.7rem;
+
+                    @media (max-width: 767px) {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                p {
+                    padding-left: 42px;
+                    padding-right: 30px;
+                    background: url(../img/sq_thumb.png) no-repeat 0% 0% / 27px auto;
+
+                    @media (max-width: 767px) {
+                        background-size: 18px auto;
+                        padding-left: 10%;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        .large__tumb {
+            width: 40%;
+            top: -100px;
+            right: 0;
+
+            @media (max-width: 767px) {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 70%;
+            }
+        }
+    }
+}
+
+/*
+テスラフォーマー説明
+-------------------------*/
+.new__desc {
+    padding: 180px 0;
+    background-color: #0270a4;
+
+    @media (max-width: 767px) {
+        padding: 3.5rem 0;
+    }
+
+    .contents {
+        .desc__block {
+            padding: 0 2.5rem;
+            color: #fff;
+            margin-bottom: 3.0rem;
+
+            @media (max-width: 767px) {
+                padding: 0;
+
+                &:nth-of-type(3), &:nth-of-type(5) {
+                    .desc__col2 {
+                        flex-flow: column-reverse;
+                    }
+                }
+            }
+
+            h3 {
+                color: #f9ee6f;
+                text-align: center;
+                margin-bottom: 4.7rem;
+
+                span {
+                    padding-bottom: 11px;
+                    border-bottom: 1px solid #f9ee6f;
+                }
+
+                @media (max-width: 767px) {
+                    margin-bottom: 2.5rem;
+                    text-align: center;
+                    font-size: 1.3rem;
+
+                    span {
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+
+            .desc__col2 {
+                margin-bottom: 4.4rem;
+
+                .thumb {
+                    width: 54%;
+                }
+
+                .sq__text {
+                    width: 39%;
+                    border: 1px solid #fff;
+                    font-weight: 600;
+                    font-size: 1.7rem;
+                    padding: 30px 35px;
+                    letter-spacing: .12em;
+                    text-align: center;
+                    line-height: 1.34;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .desc__col2 {
+                    margin-bottom: 2.5rem;
+                    flex-flow: column;
+
+                    .thumb {
+                        width: 90%;
+                        margin: 0 auto 2.5rem;
+                    }
+
+                    .sq__text {
+                        width: 70%;
+                        margin: auto;
+                        font-size: 1.2rem;
+                        padding: 1.1rem;
+                    }
+                }
+            }
+
+            .sub__text {
+                line-height: 1.98;
+                letter-spacing: .12em;
+            }
+        }
+
+        .video {
+            height: 535px;
+            margin-bottom: 5.5rem;
+
+            @media (max-width: 767px) {
+                height: 68vw;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*施術について*/
+
+.treatment {
+    background-color: #f3f3f3;
+    padding: 3.8rem 0;
+
+    @media (max-width: 767px) {
+        padding: 2.5rem 0 3.6rem;
+    }
+
+    .contents {
+        h2 {
+            color: #828282;
+
+            @media (max-width: 767px) {
+                padding-bottom: 3.8rem;
+            }
+        }
+
+        .treatment__desc {
+            padding: 2.9rem 1.9rem;
+
+            @media (max-width: 767px) {
+                flex-flow: column;
+                padding: 0;
+            }
+
+            p {
+                font-size: .98rem;
+                line-height: 1.8;
+
+                @media (max-width: 767px) {
+                    font-size: .92rem;
+                    line-height: 1.6;
+                }
+            }
+
+            .desc__left {
+                width: 59%;
+                background-color: #fff;
+                padding: 1.3rem;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+
+                .photo__box {
+                    margin-bottom: 1.5rem;
+
+                    .photo {
+                        width: 46.7%;
+                        position: relative;
+
+                        .ba__text {
+                            background-color: rgba($color: #fff, $alpha: 0.84);
+                            text-align: center;
+                            font-size: 1.78rem;
+                            padding: .38rem 2.5rem;
+                            color: #b4b4b4;
+                            line-height: 1;
+                            left: 0;
+                            top: 0;
+                            position: absolute;
+
+                            @media (max-width: 767px) {
+                                font-size: 1.22rem;
+                            }
+                        }
+                    }
+                }
+
+                .note__tex {
+                    margin-bottom: 1rem;
+                }
+
+                .sub__text {
+                    font-size: .7rem;
+                    color: #fb80a8;
+
+                    @media (max-width: 767px) {
+                        margin-bottom: 1.4rem;
+                    }
+                }
+            }
+
+            .desc__right {
+                width: 35%;
+
+                @media (max-width: 767px) {
+                    width: 90%;
+                    margin: auto;
+                }
+
+                .risk {
+                    position: relative;
+                    border: 1px solid #be9c49;
+                    padding: 1.2rem;
+                    margin-bottom: 1.2rem;
+
+                    h3 {
+                        position: absolute;
+                        background-color: #be9c49;
+                        font-size: 1.5rem;
+                        color: #fff;
+                        padding: 0.8rem 1.1rem;
+                        line-height: 1;
+                        left: 0;
+                        top: 0;
+
+                        @media (max-width: 767px) {
+                            writing-mode: vertical-rl;
+                            height: 100%;
+                            vertical-align: middle;
+                            text-align: center;
+                            padding: 0 .4rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    ul {
+                        margin-top: 3.1rem;
+                        margin-left: 1.8rem;
+
+                        li {
+                            padding-left: 1.7rem;
+                            position: relative;
+                            font-size: .8rem;
+                            margin-bottom: .3rem;
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 12px;
+                                height: 12px;
+                                background-color: #be9c49;
+                            }
+
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        @media (max-width: 767px) {
+                            margin: 0;
+                            margin-left: 2.9rem;
+
+                            li {
+                                margin-bottom: .35rem;
+
+                                &::after {
+                                    width: 8px;
+                                    height: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .note__text {
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
+
+                    p {
+                        margin-bottom: 1.0rem;
+                        font-size: .96rem;
+                    }
+
+                    ul {
+                        font-size: 0;
+
+                        li {
+                            color: #fb80a8;
+                            font-size: .88rem;
+                        }
+
+                        @media (max-width: 767px) {
+                            text-align: center;
+
+                            li {
+                                display: inline-block;
+
+                                span {
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* NEW ポイントエリア */
+
+.new__points {
+    padding: 80px 0;
+    background-image: url(../img/points_bg.jpg);
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    .gd-tit {
+        color: #00558c;
+    }
+
+    .point__list {
+        li {
+            color: #fff;
+            background-color: rgba($color: #1f6a9a, $alpha: 1);
+            clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
+            margin-top: -120px;
+            height: 480px;
+
+            @media (max-width: 767px) {
+                margin-top: -40px;
+                height: 300px;
+                clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            }
+
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+
+            .contents {
+                height: 100%;
+
+                .points__text {
+                    border-left: 1px solid #fff;
+                    padding-left: .7rem;
+                    margin-left: 3.8rem;
+                    margin-bottom: 6.5rem;
+                    width: 42%;
+
+                    .point {
+                        font-size: 1.87rem;
+                        margin-bottom: .8rem;
+                        letter-spacing: -1px;
+                    }
+
+                    @media (max-width: 767px) {
+                        margin-left: 0;
+                    }
+                }
+
+                p {}
+
+                .thumb {
+                    width: 50%;
+
+                    @media (max-width: 767px) {
+                        height: 370px;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+部位
+------------------------------*/
+
+.parts {
+    padding: 280px 0 5.5rem;
+    background: #2aabff;
+    margin-top: -340px;
+
+    @media (max-width: 767px) {
+        padding: 5.7rem 0 2.5rem;
+        background-color: #1686cf;
+        margin-top: -117px;
+    }
+
+    .gd-tit {}
+
+    .contents {
+        padding: 0;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        .parts__list {
+            width: 65%;
+            margin: 0 auto 5.8rem;
+            flex-wrap: wrap;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            li {
+                width: 48%;
+                margin-bottom: 2.5rem;
+                background-color: #1b6696;
+                border-radius: 16px;
+                color: #f4e7c9;
+                padding: 15px 60px;
+                box-sizing: border-box;
+
+                .parts__icon {
+                    width: 35%;
+
+                    //margin-left: 2.2rem;
+               
+                }
+
+                .parts__name {
+                    font-size: 1.7rem;
+                    padding: 20px 0;
+                }
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    background-color: #00558c;
+                    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+                    height: 300px;
+                    border-radius: 0;
+                    padding: 0;
+
+                    &:last-of-type {
+                        margin-top: -70px;
+                        margin-bottom: 0;
+                    }
+
+                    .inner {
+                        width: 90%;
+                        height: 303px;
+                        margin: 0 auto;
+
+                        .img {
+                            height: 100%;
+                            width: 48%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .left {
+                            //padding-bottom: 3.8rem;
+                            margin-top: -20px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+キャッチてキスと
+--------------------*/
+
+.pr__text {
+    padding: 2.8rem 2.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 62%;
+    margin: auto;
+
+    @media (max-width: 767px) {
+        padding: 1.4rem;
+        width: 98%;
+    }
+
+    p {
+        text-align: center;
+
+        span {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .band {
+        text-align: center;
+        margin-top: -98px;
+        margin-bottom: 2.8rem;
+
+        @media (max-width: 767px) {
+            margin-top: -58px;
+            margin-bottom: 1.9rem;
+        }
+
+        h2 {
+            background-color: #eb2c4c;
+            border-radius: 32.5px;
+            padding: .8rem 1.8rem;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.92rem;
+            position: relative;
+
+            @media (max-width: 767px) {
+                font-size: 1.4rem;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -27px;
+                width: 39px;
+                height: 65px;
+                background: url(../img/down_arw.png) no-repeat 50% 100% / 100% auto;
+
+                @media (max-width: 767px) {
+                    width: 28px;
+                    height: 52px;
+                    bottom: -21px;
+                }
+            }
+        }
+    }
+}
+
+/*
+施術の流れ
+-----------------------------*/
+
+.flow {
+    .contents {
+        padding: 0;
+
+        .flow__list {
+            padding: 4.5rem 0;
+
+            @media (max-width: 767px) {
+                padding: 3.5rem 0 2.5rem;
+            }
+
+            .flow__steps {
+                @media (max-width: 767px) {
+                    margin-bottom: 35px;
+
+                    &:nth-of-type(even) {
+                        flex-flow: row-reverse;
+                    }
+                }
+
+                .flow__desc, .thumb {
+                    width: 50%;
+                }
+
+                .flow__desc {
+                    padding: 0 2.8rem;
+
+                    .step {
+                        text-align: center;
+                        margin-bottom: 15px;
+
+                        span {
+                            display: inline-block;
+                            color: #3b85a3;
+                            position: relative;
+                            line-height: 1.0;
+                            padding-bottom: 15px;
+                            font-size: 1.94rem;
+                            letter-spacing: 0;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                                transform: translateX(-50%);
+                                width: 50px;
+                                height: 1px;
+                                background-color: #b7b7b7;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.98rem;
+                        text-align: center;
+                        margin-bottom: .5rem;
+                        color: #383838;
+                    }
+
+                    p {
+                        font-size: .98rem;
+                        padding: 0 1.2rem;
+                        color: #000;
+                    }
+
+                    .note {
+                        color: #ff0000;
+                        font-size: 0.8rem;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding: 0;
+                        width: 60%;
+
+                        .step {
+                            text-align: left;
+                            margin-bottom: 9px;
+
+                            span {
+                                padding-bottom: 7px;
+                                font-size: 1.3rem;
+
+                                &::after {
+                                    width: 30px;
+                                }
+                            }
+                        }
+
+                        h3 {
+                            font-size: 1.1rem;
+                            margin-bottom: .25rem;
+                            color: #3b85a3;
+                            text-align: left;
+                        }
+
+                        p {
+                            font-size: .8rem;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .thumb {
+                    @media (max-width: 767px) {
+                        width: 34%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+料金
+----------------------*/
+.price {
+    .contents {
+        @media (max-width: 767px) {
+            width: 96%;
+        }
+
+        .price__list {
+            padding: 3.5rem 0;
+            justify-content: center;
+
+            @media (max-width: 767px) {
+                display: block;
+                padding-bottom: 0;
+            }
+
+            &:last-of-type {
+                padding-top: 0;
+            }
+
+            .price__plan {
+                border: 3px solid #77c8f4;
+                padding: 1.8rem;
+                margin: 0 20px;
+                width: 43.5%;
+
+                dl {
+                    font-size: 1.74rem;
+                    text-align: center;
+
+                    dt {
+                        display: inline-block;
+                        color: #fff;
+                        background-color: #77c8f4;
+                        padding: 6px 20px 5px;
+                        border-radius: 18px;
+                        font-size: 1.04rem;
+                        margin-bottom: 2.0rem;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            bottom: -25px;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 11px 20px 0 20px;
+                            border-color: #77c8f4 transparent transparent transparent;
+                        }
+                    }
+
+                    dd {
+                        color: #5d5d5d;
+                        line-height: 1.0;
+
+                        span {
+                            vertical-align: middle;
+                        }
+
+                        .tax {
+                            font-size: .8rem;
+                            vertical-align: bottom;
+                        }
+
+                        em {
+                            line-height: 1;
+                            vertical-align: middle;
+                        }
+
+                        .icon {
+                            width: 30px;
+                            display: inline-block;
+                        }
+
+                        .note {
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 767px) {
+                .price__plan {
+                    padding: 1.0rem;
+                    margin: 0 auto 1.5rem;
+                    width: 96%;
+
+                    dl {
+                        dt {
+                            font-size: .88rem;
+                            white-space: nowrap;
+                            margin-bottom: 2.5rem;
+                        }
+
+                        dd {
+                            font-size: 1.04rem;
+
+                            .tax {
+                                vertical-align: middle;
+                            }
+
+                            .icon {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .note__text {
+            margin-bottom: 3.5rem;
+
+            @media (max-width: 767px) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+/**************
+
+
+よくある質問
+
+
+****************/
+
+.qa {
+    .contents {
+        padding: 100px 0;
+
+        .qa__box {
+            padding: 2.2rem 0;
+            border-top: 1px solid #b5b5b5;
+
+            &:last-of-type {
+                border-bottom: 1px solid #b5b5b5;
+            }
+
+            dt,
+            dd {
+                padding: 18px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 1.22rem;
+                    width: 80%;
+                }
+
+                .tit {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
+
+            dt {
+                line-height: 1.1;
+
+                .tit {
+                    border: 2px dotted #0271a5;
+                    line-height: 53px;
+                }
+
+                span {}
+            }
+
+            dd {
+                background-color: #fff1e0;
+                line-height: 1.7;
+
+                .tit {
+                    background-color: #0271a5;
+                    color: #fff;
+                    line-height: 56px;
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .qa {
+        .contents {
+            padding: 40px 0;
+
+            .qa__box {
+                padding: .9rem 0;
+
+                dt,
+                dd {
+                    padding: 18px;
+
+                    span {
+                        font-size: .9rem;
+                        width: 80%;
+                    }
+
+                    .tit {
+                        width: 34px;
+                        height: 34px;
+                        margin-right: 20px;
+                        font-size: 1.02rem;
+                    }
+                }
+
+                dt {
+                    padding-top: 3px;
+
+                    .tit {
+                        line-height: 31px;
+                    }
+
+                    span {}
+                }
+
+                dd {
+                    .tit {
+                        line-height: 34px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**************
+
+クリニック情報
+
+****************/
+
+.clinic__info {
+    background-color: #f6f6f6;
+
+    .contents {
+        padding: 90px 0 160px;
+
+        .map {
+            width: 100%;
+            height: 640px;
+            margin-bottom: 45px;
+        }
+
+        .info__texts {
+            .address {
+                width: 58%;
+
+                .logo {
+                    width: 60%;
+                    margin-bottom: 18px;
+                }
+
+                address {
+                    p {
+                        font-size: 0.98rem;
+
+                        a {
+                            color: #454545;
+                            letter-spacing: 0.1em;
+                        }
+                    }
+                }
+            }
+
+            .map__detail {
+                width: 40%;
+                text-align: right;
+
+                a {
+                    background-color: #e95c95;
+                    display: inline-block;
+                    padding: 12px 72px;
+                    border-radius: 7px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .clinic__info {
+        .contents {
+            padding: 40px 0 60px;
+
+            .map {
+                width: 100%;
+                height: 45vw;
+                margin-bottom: 35px;
+            }
+
+            .info__texts {
+                flex-flow: column;
+
+                .address {
+                    width: 100%;
+                    margin-bottom: 12px;
+                    text-align: center;
+
+                    .logo {
+                        width: 60%;
+                        margin: 0 auto 10px;
+                    }
+
+                    address {
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                .map__detail {
+                    width: 70%;
+                    max-width: 285px;
+                    margin: auto;
+
+                    a {
+                        display: block;
+                        padding: 12px 0;
+                    }
+                }
+            }
+        }
+    }
+}

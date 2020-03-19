@@ -1,0 +1,397 @@
+/*
+見出しスタイル
+*/
+
+.section__tit {
+    padding: 1.35rem 0 1.25rem;
+    background: rgb(38, 102, 120);
+    background: linear-gradient(180deg, rgba(38, 102, 120, 1) 0%, rgba(5, 33, 74, 1) 100%);
+
+    h2 {
+        text-align: center;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: 600;
+
+        span {
+            font-size: 1.625rem;
+            display: block;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.4rem;
+        }
+
+        em {
+            font-size: 2.8125rem;
+            letter-spacing: -.025em;
+            line-height: 1.24;
+        }
+    }
+}
+
+/* テキスト背景 */
+
+.text__bg {
+    padding: 0.1875rem 0;
+    color: #fff;
+}
+
+.pink {
+    background-color: #f49689;
+}
+
+.text__pink {
+    color: #dd245d;
+}
+
+.pink02 {
+    background-color: #dd245d;
+}
+
+/* 1つ目 */
+.desc__area {
+    .desc__box__wrap.first {
+        padding-top: 6.25rem;
+        border-bottom: 1px solid #ccc;
+
+        .desc__box {
+            padding-top: 0;
+        }
+    }
+
+    /* ２つ目 */
+    .desc__box__wrap.last {
+        .desc__box {
+            @media (max-width: 767px) {
+                flex-flow: column-reverse;
+            }
+        }
+    }
+
+    .desc__box__wrap {
+        .desc__box {
+            padding: 4.5625rem 0;
+            width: 1150px;
+            margin: auto;
+
+            @media (max-width: 767px) {
+                width: 90%;
+                flex-flow: column;
+            }
+
+            .thumb {
+                width: 36.52%;
+
+                @media (max-width: 767px) {
+                    width: 78%;
+                    margin: 0 auto 2.4rem;
+                }
+            }
+
+            .desc__text {
+                width: 58.96%;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
+                h3 {
+                    line-height: 1.32;
+                    font-size: 2rem;
+                    margin-bottom: 2.1875rem;
+                    font-weight: 600;
+                    letter-spacing: 0;
+
+                    @media (max-width: 767px) {
+                        font-size: 1.88rem;
+                        line-height: 1.48;
+                        letter-spacing: -.01em;
+                    }
+                }
+
+                p {
+                    font-size: 1.125rem;
+                    line-height: 1.67;
+                    margin-bottom: 1.125rem;
+                    color: #2c2c2c;
+                    letter-spacing: 0;
+
+                    @media (max-width: 767px) {
+                        font-size: 1.34rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pr__area {
+    .worry__area {
+        padding: 2.5rem 0 2.9375rem;
+        background-image: url(../img/worry_bg.jpg);
+        position: relative;
+
+        @media (max-width: 767px) {
+            background: none;
+            padding: 0;
+        }
+
+        .contents {
+            h3 {}
+        }
+    }
+
+    .merit__area {
+        background: repeat 50% top;
+        background-image: linear-gradient(#f2f2f2 1px, transparent 0), linear-gradient(90deg, #f2f2f2 1px, transparent 0);
+        background-size: 17px 17px;
+        background-color: #fff;
+        padding-bottom: 3.1875rem;
+
+        .contents {
+            .tit__over {
+                position: relative;
+                margin: -60px auto 3.5rem;
+                width: 88.7%;
+
+                @media (max-width: 767px) {
+                    margin-top: -22px;
+                }
+            }
+
+            .merit__marks {
+                margin-bottom: 3.375rem;
+            }
+
+            .merit__list__wrap {
+                .check__img {
+                    width: 12%;
+                    margin-left: 4%;
+                    margin-top: 2.99%;
+                }
+
+                .merit__list__right {
+                    width: 74.4%;
+                    margin-right: 7%;
+
+                    @media (max-width: 767px) {
+                        width: 98%;
+                        margin: auto;
+                    }
+
+                    h3 {
+                        width: 97.8%;
+                        margin-bottom: 2.25rem;
+                    }
+
+                    p {
+                        padding: 0.6875rem 0;
+                        font-size: 18px;
+
+                        @media (max-width: 767px) {
+                            font-size: 1.41rem;
+                        }
+
+                        span {
+                            border-bottom: 1px dotted #777777;
+                            padding-bottom: 0.2875rem;
+                            display: block;
+                            letter-spacing: -.2px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.desc__area02 {
+    background-color: #07264d;
+    padding-bottom: 1.875rem;
+
+    .section__tit {
+        h2 {
+            width: 44%;
+            margin: auto;
+
+            @media (max-width: 767px) {
+                width: 76%;
+            }
+        }
+    }
+
+    .desc__box {
+        padding: 3.5125rem 3.25rem;
+        background-color: #fff;
+        border-radius: 10px;
+
+        @media (max-width: 767px) {
+            flex-flow: column;
+            padding: 2.0rem 2.28rem;
+        }
+
+        .thumb {
+            width: 34.3%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 1.74rem;
+            }
+        }
+
+        .desc__text {
+            line-height: 1.5;
+            width: 60.5%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            h3 {
+                color: #0094bd;
+                font-size: 1.426875rem;
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+                letter-spacing: -.2px;
+
+                @media (max-width: 767px) {
+                    font-size: 1.65rem;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .thumb {
+                    margin-bottom: 1.75rem;
+                }
+            }
+
+            p {
+                font-size: 1.25rem;
+                letter-spacing: 0.025em;
+                color: #1a1a1a;
+
+                .text__bg {
+                    font-weight: 600;
+                    padding: 5px 3px;
+                    line-height: 1.6;
+                }
+
+                @media (max-width: 767px) {
+                    line-height: 1.84;
+                    font-size: 1.34rem;
+
+                    .text__bg {
+                        line-height: 2.14;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    transform: skew(0deg, -2deg);
+    background-color: #efefef;
+}
+
+/**************
+
+クリニック情報
+
+****************/
+
+.clinic__info {
+    background-color: #f6f6f6;
+
+    .contents {
+        padding: 90px 0 115px;
+
+        .map {
+            width: 100%;
+            height: 640px;
+            margin-bottom: 1.875rem;
+        }
+
+        .info__texts {
+            .address {
+                width: 58%;
+
+                .logo {
+                    width: 48%;
+                    margin-bottom: 18px;
+                }
+
+                address {
+                    p {
+                        font-size: 0.98rem;
+
+                        a {
+                            color: #454545;
+                            letter-spacing: 0.1em;
+                        }
+                    }
+                }
+            }
+
+            .map__detail {
+                width: 40%;
+                text-align: right;
+
+                a {
+                    background-color: #e95c95;
+                    display: inline-block;
+                    padding: 14px 91px;
+                    border-radius: 7px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .clinic__info {
+        .contents {
+            padding: 40px 0 60px;
+
+            .map {
+                width: 100%;
+                height: 45vw;
+                margin-bottom: 35px;
+            }
+
+            .info__texts {
+                flex-flow: column;
+
+                .address {
+                    width: 100%;
+                    margin-bottom: 12px;
+                    text-align: center;
+
+                    .logo {
+                        width: 60%;
+                        margin: 0 auto 10px;
+                    }
+
+                    address {
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                .map__detail {
+                    width: 64%;
+                    margin: auto;
+
+                    a {
+                        display: block;
+                        padding: 12px 0;
+                        background-color: #3973d3;
+                    }
+                }
+            }
+        }
+    }
+}

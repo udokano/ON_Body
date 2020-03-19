@@ -1,0 +1,185 @@
+/* 施術の流れ PC__ONLY */
+
+.flow.pc__only {
+    //background-color: #a3becc;
+    h2 {
+        font-weight: 600;
+    }
+
+    .contents {
+        padding: 90px 0 40px;
+
+        .text__image {
+            width: 38%;
+            margin-bottom: 90px;
+        }
+
+        .step__colum {
+            li {
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 100px;
+
+                span {
+                    display: block;
+                    letter-spacing: 0.5em;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                    color: #909090;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    letter-spacing: 0.05em;
+                    color: #0253a6;
+                }
+
+                .bg {
+                    width: 100%;
+                    height: 230px;
+                }
+
+                .wrap {
+                    position: relative;
+
+                    .desc {
+                        padding: 56px 0 0 60px;
+                        letter-spacing: 0.1em;
+                        line-height: 1.9;
+                    }
+
+                    .thumb {
+                        width: 34%;
+                        padding-right: 60px;
+                        margin-top: -38px;
+                    }
+                }
+            }
+
+            .arw {
+                width: 66px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/*===================
+flow SP
+=====================================*/
+
+@media (max-width: 767px) {
+    .flow.sp__only {
+        .contents {
+            padding: 2.9rem 0;
+
+            h2 {
+                margin-bottom: 25px;
+                font-size: 2.4rem;
+            }
+
+            .arw {
+                width: 15%;
+                margin: 1.25rem auto;
+            }
+
+            ul {
+                justify-content: space-around;
+
+                li {
+                    width: 100%;
+
+                    dl {
+                        dt, dd {
+                            padding: 15px 35px;
+                            font-size: 1.2rem;
+                            letter-spacing: 0.075em;
+                        }
+
+                        dt {
+                            background-color: #464646;
+                            justify-content: flex-start;
+                            height: 50px;
+
+                            .num {
+                                font-size: 3.25rem;
+                                color: #ff84c7;
+                                font-family: 'DINPro Medium';
+                                line-height: 1;
+                            }
+
+                            .text {
+                                margin-left: 1.2rem;
+                                line-height: 1.3;
+                            }
+                        }
+
+                        dd {
+                            height: 110px;
+                            color: #0c466b;
+
+                            &.bg01 {
+                                background-image: url(../img/flow_sp_thumb01.jpg);
+                            }
+
+                            &.bg02 {
+                                background-image: url(../img/flow_sp_thumb02.jpg);
+                            }
+
+                            &.bg03 {
+                                background-image: url(../img/flow_sp_thumb03.jpg);
+                            }
+
+                            &.bg04 {
+                                background-image: url(../img/flow_sp_thumb04.jpg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .flow {
+        .contents {
+            h2 {
+                margin-bottom: 35px;
+            }
+
+            ul {
+                display: block;
+                width: 90%;
+                margin: auto;
+
+                li {
+                    width: 100%;
+
+                    dl {
+                        dt, dd {
+                            padding: 2% 1.4rem;
+                            font-size: 1.6rem;
+                        }
+
+                        dt {
+                            background-color: #464646;
+                            justify-content: flex-start;
+
+                            .num {
+                                font-size: 4.4rem;
+                            }
+
+                            .text {
+                                margin-left: 1.4rem;
+                            }
+                        }
+
+                        dd {
+                            height: 90px;
+                            padding: 5% 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

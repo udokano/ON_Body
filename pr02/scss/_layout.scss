@@ -680,13 +680,13 @@ price
             justify-content: space-around;
 
             li {
-                width: 44%;
+                width: 46%;
 
                 dl {
                     letter-spacing: 0.075em;
 
                     dt, dd {
-                        padding: 2.2% 26%;
+                        padding: 2.2% 22%;
                     }
 
                     dt {
@@ -707,36 +707,61 @@ price
                     dd {
                         border: 2px solid #014665;
                         background-color: #fff;
-                        text-align: center;
+
+                        //text-align: center;
                         font-size: 1.06rem;
 
-                        span {
+                        .price__limit {
                             text-align: left;
                             font-size: 1.28rem;
-                            display: block;
+                            display: inline-block;
+                        }
+
+                        @media (min-width: 768px) {
+                            .pl__ps01 {
+                                padding-left: 24px;
+                            }
+
+                            .pl__ps02 {
+                                padding-left: 32px;
+                            }
+                        }
+
+                        .num__warp {
+                            text-align: center;
                         }
 
                         p.num {
                             line-height: 1.0;
-                            justify-content: flex-start;
+
+                            //justify-content: center;
+                            text-align: center;
+                            display: inline-block;
 
                             span.num__price {
                                 font-size: 3.8rem;
-                                letter-spacing: .1em;
+                                letter-spacing: .0075em;
+                                vertical-align: bottom;
                             }
 
-                            span.yen {
-                                display: flex;
-                                flex-flow: column;
-                                justify-content: flex-end;
-                                align-items: center;
+                            .yen__warp {
+                                display: inline-block;
+                                vertical-align: bottom;
 
-                                em {
-                                    font-size: .5rem;
-                                }
+                                span.yen {
+                                    height: 100%;
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: flex-end;
+                                    align-items: flex-end;
 
-                                span {
-                                    font-size: 1.75rem;
+                                    em {
+                                        font-size: .5rem;
+                                    }
+
+                                    span {
+                                        font-size: 1.75rem;
+                                    }
                                 }
                             }
                         }
@@ -790,7 +815,7 @@ price
                         }
 
                         dt.line01 {
-                            padding-top: 24px;
+                            padding-top: 20px;
                         }
 
                         dt.line02 {
@@ -800,26 +825,38 @@ price
                         dd {
                             width: 65%;
                             font-size: 1.06rem;
-                            padding: 1.9% 1.6rem;
-                            padding-left: 2.8rem;
+                            padding: 1.9% 7.6%;
+
+                            //padding-left: 2.8rem;
+                            text-align: left;
 
                             span {
                                 font-size: 1.42rem;
                                 display: block;
                             }
 
+                            .num__warp {
+                                text-align: left;
+                            }
+
                             p.num {
                                 line-height: 1.0;
-                                justify-content: center;
+                                display: block;
+                                text-align: left;
+
+                                //justify-content: center;
 
                                 span.num__price {
-                                    font-size: 5.2rem;
-                                    text-align: center;
+                                    font-size: 4.2rem;
+                                    text-align: left;
                                     padding-left: 0;
+                                    display: inline-block;
                                 }
 
                                 span.yen {
                                     padding-left: 0;
+                                    text-align: center;
+                                    align-items: center !important;
 
                                     em {
                                         font-size: .92rem;

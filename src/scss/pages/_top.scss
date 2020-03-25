@@ -133,14 +133,15 @@ top=slide
                         .desc {
                             h2 {
                                 height: 25px;
+                                font-size: 1.8rem;
                             }
 
                             h2.fz-middle {
-                                font-size: 1.42rem;
+                                font-size: 1.6rem;
                             }
 
                             p {
-                                font-size: 0.98rem;
+                                font-size: 1.148rem;
                             }
                         }
                     }
@@ -479,6 +480,7 @@ toggle button area
                     line-height: 1.8;
                     font-size: .94rem;
                     letter-spacing: .025em;
+                    text-align: justify;
 
                     &:first-of-type {
                         padding-top: 100px;
@@ -563,16 +565,16 @@ toggle button area
                 .greeting {
                     width: 92%;
                     margin: 10%  auto 5%;
-                    padding: 25px;
-                    padding-left: 60px;
+                    padding: 25px 10px;
+                    padding-left: 67px;
 
                     .band {
                         right: auto;
-                        left: -1%;
+                        left: -2%;
                         top: -16px;
                         letter-spacing: 0.38em;
-                        width: 48px;
-                        height: 120px;
+                        width: 62px;
+                        height: 150px;
 
                         .band__inner {
                             padding: 10% 8%;
@@ -580,7 +582,7 @@ toggle button area
                             height: 100%;
 
                             h2 {
-                                font-size: 20px;
+                                font-size: 26px;
                                 margin-top: .5rem;
                                 writing-mode: vertical-rl;
                                 letter-spacing: 0.38em;
@@ -589,15 +591,15 @@ toggle button area
                             span {
                                 display: block;
                                 font-size: 10px;
-                                letter-spacing: 0.00001em;
-                                margin-bottom: 1rem;
+                                letter-spacing: 0.05em;
+                                margin-bottom: 20px;
                             }
 
                             &::after {
-                                right: -8px;
+                                right: -6px;
                                 bottom: auto;
                                 top: 0;
-                                border-width: 0 8px 16px 0px;
+                                border-width: 0 6px 16px 0px;
                                 border-color: transparent transparent #606060 transparent;
                             }
                         }
@@ -635,6 +637,7 @@ MENU
         .menu__list {
             li {
                 margin-bottom: 50px;
+                height: 314px;
 
                 .num-bg {
                     width: 50%;

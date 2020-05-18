@@ -297,6 +297,9 @@ html {
   .pages__title .contents h1::after {
     height: 1px;
   }
+  .pages__title .contents span {
+    font-size: 1.16rem;
+  }
 }
 
 /* breadcrumb
@@ -321,7 +324,7 @@ html {
 }
 
 ul.breadcrumb > li > a > span {
-  font-size: .7rem !important;
+  font-size: .9888rem !important;
 }
 
 .breadcrumb > li > a {
@@ -340,7 +343,7 @@ ul.breadcrumb > li > a > span {
     margin: 1em auto;
   }
   ul.breadcrumb > li > a > span {
-    font-size: .88rem !important;
+    font-size: 1.09rem !important;
   }
 }
 
@@ -431,6 +434,10 @@ PC or SP displey
   display: none;
 }
 
+.sp-only {
+  display: none;
+}
+
 .sp-display {
   display: none !important;
 }
@@ -438,6 +445,9 @@ PC or SP displey
 @media (max-width: 767px) {
   .pc-only {
     display: none;
+  }
+  .sp-only {
+    display: block;
   }
   .pc-displey {
     display: none !important;
@@ -1103,7 +1113,7 @@ FOOTER STYLE
     border-radius: 1em;
     color: #fff;
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.28rem;
     margin: 0 1em;
     padding: .25em 0;
     transition: background .5s;
@@ -1637,6 +1647,9 @@ ABOUT SECTION 共通デザイン
   .about-sec .contents .about_contents-box .cach {
     margin-bottom: 22px;
   }
+  .about-sec .contents .about_contents-box p {
+    font-size: 1.25rem;
+  }
 }
 
 /*=
@@ -1682,7 +1695,7 @@ ABOUT SECTION CONCEPUT
   }
   .about-sec.conceput .contents .about_contents-box .btn-area li .btn {
     border-radius: 22px;
-    font-size: 1.0rem;
+    font-size: 1.18rem;
     height: 41px;
     letter-spacing: 0.0001em;
     line-height: 41px;
@@ -1733,7 +1746,7 @@ ABOUT SECTION ACCESS
     width: 200px;
   }
   .about-sec.access .contents .btn-cont .btn-square {
-    font-size: 1.1rem;
+    font-size: 1.28rem;
   }
 }
 
@@ -2821,9 +2834,9 @@ light tome: #919191;
 }
 
 .qa__answer {
+  font-size: 1.2rem;
   padding: 1em 0 0;
   text-align: justify;
-  word-break: break-all;
 }
 
 @media (min-width: 768px) {
@@ -2980,13 +2993,14 @@ top=slide
     padding: 22px;
   }
   .top__slide-area .contents ul li .top__box .desc h2 {
+    font-size: 1.8rem;
     height: 25px;
   }
   .top__slide-area .contents ul li .top__box .desc h2.fz-middle {
-    font-size: 1.42rem;
+    font-size: 1.6rem;
   }
   .top__slide-area .contents ul li .top__box .desc p {
-    font-size: 0.98rem;
+    font-size: 1.148rem;
   }
   .top__slide-area .contents ul li .bottom__box .font-sm {
     font-size: 1.1rem;
@@ -3309,6 +3323,7 @@ toggle button area
   letter-spacing: .025em;
   line-height: 1.8;
   margin-bottom: 0.5rem;
+  text-align: justify;
 }
 
 .col-2__box .contents .right__concept .greeting p:first-of-type {
@@ -3379,17 +3394,17 @@ toggle button area
   }
   .col-2__box .contents .right__concept .greeting {
     margin: 10%  auto 5%;
-    padding: 25px;
-    padding-left: 60px;
+    padding: 25px 10px;
+    padding-left: 67px;
     width: 92%;
   }
   .col-2__box .contents .right__concept .greeting .band {
-    height: 120px;
-    left: -1%;
+    height: 150px;
+    left: -2%;
     letter-spacing: 0.38em;
     right: auto;
     top: -16px;
-    width: 48px;
+    width: 62px;
   }
   .col-2__box .contents .right__concept .greeting .band .band__inner {
     -ms-flex-flow: column;
@@ -3402,7 +3417,7 @@ toggle button area
   .col-2__box .contents .right__concept .greeting .band .band__inner h2 {
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    font-size: 20px;
+    font-size: 26px;
     letter-spacing: 0.38em;
     margin-top: .5rem;
     writing-mode: vertical-rl;
@@ -3410,14 +3425,14 @@ toggle button area
   .col-2__box .contents .right__concept .greeting .band .band__inner span {
     display: block;
     font-size: 10px;
-    letter-spacing: 0.00001em;
-    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
   }
   .col-2__box .contents .right__concept .greeting .band .band__inner::after {
     border-color: transparent transparent #606060 transparent;
-    border-width: 0 8px 16px 0px;
+    border-width: 0 6px 16px 0px;
     bottom: auto;
-    right: -8px;
+    right: -6px;
     top: 0;
   }
   .col-2__box .contents .right__concept .greeting p {
@@ -3443,6 +3458,7 @@ MENU
 }
 
 .menu .contents .menu__list li {
+  height: 314px;
   margin-bottom: 50px;
 }
 

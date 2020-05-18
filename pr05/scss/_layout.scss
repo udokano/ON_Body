@@ -54,6 +54,10 @@
         padding-top: 6.25rem;
         border-bottom: 1px solid #ccc;
 
+        @media (max-width: 767px) {
+            padding-top: 3.275rem;
+        }
+
         .desc__box {
             padding-top: 0;
         }
@@ -156,6 +160,7 @@
 
                 @media (max-width: 767px) {
                     margin-top: -22px;
+                    width: 100%;
                 }
             }
 

@@ -1417,13 +1417,13 @@ price
       justify-content: space-around;
 }
 .price .contents ul li {
-  width: 44%;
+  width: 46%;
 }
 .price .contents ul li dl {
   letter-spacing: 0.075em;
 }
 .price .contents ul li dl dt, .price .contents ul li dl dd {
-  padding: 2.2% 26%;
+  padding: 2.2% 22%;
 }
 .price .contents ul li dl dt {
   background-color: #014665;
@@ -1440,25 +1440,40 @@ price
 .price .contents ul li dl dd {
   border: 2px solid #014665;
   background-color: #fff;
-  text-align: center;
   font-size: 1.06rem;
 }
-.price .contents ul li dl dd span {
+.price .contents ul li dl dd .price__limit {
   text-align: left;
   font-size: 1.28rem;
-  display: block;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .price .contents ul li dl dd .pl__ps01 {
+    padding-left: 24px;
+  }
+  .price .contents ul li dl dd .pl__ps02 {
+    padding-left: 32px;
+  }
+}
+.price .contents ul li dl dd .num__warp {
+  text-align: center;
 }
 .price .contents ul li dl dd p.num {
   line-height: 1.0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  text-align: center;
+  display: inline-block;
 }
 .price .contents ul li dl dd p.num span.num__price {
   font-size: 3.8rem;
-  letter-spacing: .1em;
+  letter-spacing: .0075em;
+  vertical-align: bottom;
 }
-.price .contents ul li dl dd p.num span.yen {
+.price .contents ul li dl dd p.num .yen__warp {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.price .contents ul li dl dd p.num .yen__warp span.yen {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1469,14 +1484,14 @@ price
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.price .contents ul li dl dd p.num span.yen em {
+.price .contents ul li dl dd p.num .yen__warp span.yen em {
   font-size: .5rem;
 }
-.price .contents ul li dl dd p.num span.yen span {
+.price .contents ul li dl dd p.num .yen__warp span.yen span {
   font-size: 1.75rem;
 }
 
@@ -1520,7 +1535,7 @@ price
     display: block;
   }
   .price .contents ul li dl dt.line01 {
-    padding-top: 24px;
+    padding-top: 20px;
   }
   .price .contents ul li dl dt.line02 {
     padding-top: 10px;
@@ -1528,26 +1543,33 @@ price
   .price .contents ul li dl dd {
     width: 65%;
     font-size: 1.06rem;
-    padding: 1.9% 1.6rem;
-    padding-left: 2.8rem;
+    padding: 1.9% 7.6%;
+    text-align: left;
   }
   .price .contents ul li dl dd span {
     font-size: 1.42rem;
     display: block;
   }
+  .price .contents ul li dl dd .num__warp {
+    text-align: left;
+  }
   .price .contents ul li dl dd p.num {
     line-height: 1.0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
+    text-align: left;
   }
   .price .contents ul li dl dd p.num span.num__price {
-    font-size: 5.2rem;
-    text-align: center;
+    font-size: 4.2rem;
+    text-align: left;
     padding-left: 0;
+    display: inline-block;
   }
   .price .contents ul li dl dd p.num span.yen {
     padding-left: 0;
+    text-align: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   .price .contents ul li dl dd p.num span.yen em {
     font-size: .92rem;
